@@ -2,8 +2,8 @@ package entities;
 
 import java.util.ArrayList;
 
-public class Jornaleiro implements Editora{
-    
+public class Jornaleiro implements Editora {
+
     String conteudoDoJornal;
     ArrayList<Assinante> assinantes;
 
@@ -13,21 +13,17 @@ public class Jornaleiro implements Editora{
     }
 
     @Override
-    public void update(){
+    public void update(String conteudo) {
         for (Assinante assinante : assinantes) {
-            System.out.println("Sr: " + assinante.getNome() +"! Novo jornal lançado!");
+            System.out.println("Sr: " + assinante.getNome() + "! Novo jornal lançado: " + conteudo);
         }
     }
 
-    public void unsubscribe(Assinante desinscrito){
-        for (Assinante assinante : assinantes) {
-            if(assinante.getNome() == desinscrito.getNome())
-                assinantes.remove(desinscrito);
-        }
+    public void unsubscribe(Assinante desinscrito) {
+        assinantes.remove(desinscrito);
     }
 
-    public void subscribe(Assinante inscrito){
+    public void subscribe(Assinante inscrito) {
         this.assinantes.add(inscrito);
     }
-
 }

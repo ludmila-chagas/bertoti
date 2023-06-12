@@ -1,5 +1,5 @@
 package entities;
 
 public interface Editora {
-    public void update();
+    public void update(String conteudo);
 }
