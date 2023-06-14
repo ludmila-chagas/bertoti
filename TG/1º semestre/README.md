@@ -6,7 +6,7 @@ Olá, seja bem-vindo! Meu nome é Ludmila Mariana Chagas e sou estudante do tecn
 
 ![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/571978e3-5ba3-40f8-bc39-47a21c445b78)
 
-## Principais conhecimentos!
+## Principais conhecimentos
 
 
 Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C++. Lá aprendi o básico de lógica de programação, porém foi na Fatec que desenvolvi com profundidade meus conhecimentos em Programação Orientada a Objetos e principalmente em Java, sendo hoje minha principal linguagem utilizada. Meu foco está no desenvolvimento backend, com implementações de webservices especialmente pelo framework Springboot.
