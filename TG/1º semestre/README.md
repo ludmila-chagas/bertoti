@@ -66,7 +66,7 @@ Dentre as funcionalidades que desenvolvi, estão:
 - Cadastro de disciplinas;
 - Configuração de metas em notas.
 
-###Aprendizados Efetivos HS
+### Aprendizados Efetivos HS
 Através dessse projeto tive uma pequena noção da dimensão de possibilidades de criação através da programação, pois nunca tinha participado de algo tão grande quanto ele. Meus destaques são:
 
 - Programar na linguagem Python;
