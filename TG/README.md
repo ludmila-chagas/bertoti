@@ -90,6 +90,8 @@ Através dessse projeto tive uma pequena noção da dimensão de possibilidades 
 - Modelar um banco de dados;
 - Utilizar banco de dados em memória.
 
+------
+------
 # Projeto 2: 2º semestre 2021
 
 ### Parceiro Acadêmico
