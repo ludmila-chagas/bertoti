@@ -12,9 +12,9 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 
 # Índice
 
-- [Projeto 1: 1º semestre 2021](#projeto-1-1º-semestre-2021)
+- 
 <details>
-<summary>Seções</summary>
+<summary>[Projeto 1: 1º semestre 2021](#projeto-1-1º-semestre-2021)</summary>
 
   - [Parceiro Acadêmico](#parceiro-acadêmico)
   - [Visão do Projeto](#visão-do-projeto)
