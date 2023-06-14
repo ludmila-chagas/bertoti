@@ -39,9 +39,9 @@ O propósito do projeto foi trazer para os estudantes em geral uma forma mais ce
 ### Principais tecnologias
 
 - [Python](#python)
-- [SQLite]()
-- [SpeechRecognition]()
-- [PyAudio]()
+- [SQLite](#sqlite)
+- [SpeechRecognition](#speechrecognition)
+- [PyAudio](#pyaudio)
 
 ### Python
 Linguagem de programação de alto nível, amplamente utilizada devido à sua simplicidade e legibilidade. É ideal para desenvolvimento rápido de aplicativos, análise de dados e automação de tarefas.
