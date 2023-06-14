@@ -84,7 +84,7 @@ Através dessse projeto tive uma pequena noção da dimensão de possibilidades 
 
 ### Parceiro Acadêmico
 
-## Para esse semestre tivemos como parceiro a empresa Necto Systems sendo nosso cliente Carlos Eduardo, próprio direto de lá.
+Para esse semestre tivemos como parceiro a empresa Necto Systems sendo nosso cliente Carlos Eduardo, próprio direto de lá.
 
 ### Visão do Projeto
 
