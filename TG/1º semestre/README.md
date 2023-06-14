@@ -22,9 +22,9 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 
 ---
 
-#Projeto 1: 1º semestre 2021
+# Projeto 1: 1º semestre 2021
 
-###Parceiro Acadêmico
+### Parceiro Acadêmico
 O professor Fabiano Sabha atuou como nosso cliente interno do projeto.
 
 ---
