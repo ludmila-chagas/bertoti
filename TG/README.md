@@ -38,7 +38,7 @@ O propósito do projeto foi trazer para os estudantes em geral uma forma mais ce
 
 ### Principais tecnologias
 
-- [Python](https://github.com/pandao/editor.md "Heading link")
+- [Python](https://github.com/ludmila-chagas/bertoti/tree/main/TG#python)
 - [SQLite]()
 - [SpeechRecognition]()
 - [PyAudio]()
