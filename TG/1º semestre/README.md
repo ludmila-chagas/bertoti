@@ -4,7 +4,8 @@
 
 Olá, seja bem-vindo! Meu nome é Ludmila Mariana Chagas e sou estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
 
-![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/17a3bd23-a4c7-4a3a-ba2b-602f8f7f7c71)
+![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/a054d5f3-2b54-437a-82d8-93f470587cf0)
+
 
 ## Principais conhecimentos
 
