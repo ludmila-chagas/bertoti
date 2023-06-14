@@ -27,6 +27,11 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <summary>Projeto 2: 2º semestre 2021</summary>
 
 - [Início Projeto 2](#projeto-2-2º-semestre-2021)
+- [Parceiro Acadêmico](#parceiro-acadêmico-1)
+- [Visão do Projeto](#visão-do-projeto-1)
+- [Principais tecnologias](#principais-tecnologias-1)
+- [Contribuições pessoais](#contribuições-pessoais-1)
+- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
 </details>
 
 ---
