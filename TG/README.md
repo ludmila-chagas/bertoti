@@ -156,7 +156,7 @@ Novamente atuando como desenvolvedora, por esse projeto tive meu primeiro contat
 </details>
 
 ### Aprendizados Efetivos HS
-Como meu primeiro projeto utilizando Java, pude aprender de forma mais concreta os conceitos de programação orientada a objetos e as particularidades da linguagem. Além disso, como citei, também foi a minha primeira experiência vinculando um software a um banco de dados relacional, então também tive a oportunidade de entender mais sobre SQL. Meus detaques são:
+Como meu primeiro projeto utilizando Java, pude aprender de forma mais concreta os conceitos de programação orientada a objetos e as particularidades da linguagem. Além disso, como citei, também foi a minha primeira experiência vinculando um software a um banco de dados relacional, então também tive a oportunidade de entender mais sobre SQL e sobre CRUD. Meus detaques são:
 - Programar em Java;
 - Programar seguindo conceitos de POO;
 - Como usar banco de dados relacionais e SGBDs;
@@ -203,5 +203,39 @@ Linguagem de programação versátil e amplamente utilizada no desenvolvimento w
 
 ---
 
-###Contribuições pessoais
+### Contribuições pessoais
+Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de commit constantemente. Também implementei a cultura de utilizar testes unitários para facilitar essa etapa importante no desenvolvimento de qualquer aplicação. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que carrego experiência com visualização de dados e criaçaõ de painéis.
+
+<details>
+<summary>Modelagem do banco de dados</summary>
+
+![Modelo conceitual banco de dados](https://github.com/ludmila-chagas/bertoti/assets/81494654/e3964e56-252f-409e-816a-0ba14174fa06)
+
+</details>
+
+<details>
+<summary>Implementação de testes unitários</summary>
+
+#### [Acesse o código completo](https://github.com/Thunder53/Dom-Rock/commit/d8c3707f29854266447e257efa452e0a715389a3)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/2469450b-6753-43b9-94ab-8d59de43e3c9)
+
+</details>
+
+
+<details>
+<summary>Gráfico "Top 10 Produtos" mais vendidos (back e frontend)</summary>
+ 
+####Acesse o código completo [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/ProdutoController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/chartAdmin.js)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/0af04379-0106-4f43-854d-78324fdb9117)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/451e61fa-24a9-4786-8dc7-0ffb65f79ccb)
+
+</details>
+
+<details>
+<summary>Atualização de vendas estimadas (back e fronted)</summary>
+ #### Acesse o código [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/VendaController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/formMinhasVendas.js)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/82010a73-8459-4e8c-bbed-19bb13696b1f)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/3065f405-4477-4755-ba4b-452700e96440)
+
+
 
