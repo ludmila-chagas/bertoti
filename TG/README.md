@@ -238,6 +238,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
  
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/82010a73-8459-4e8c-bbed-19bb13696b1f)
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/3065f405-4477-4755-ba4b-452700e96440)
+<details>
 
 
 
