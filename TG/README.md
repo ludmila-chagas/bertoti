@@ -149,7 +149,7 @@ Novamente atuando como desenvolvedora, por esse projeto tive meu primeiro contat
 <summary>Conexão com banco de dados e consultas no SGBD</summary>
 
 #### [Acesse o código completo](https://github.com/PhatomFatec/PI_Necto_Systems/blob/main/apiNectoSystem/src/packageCodificacao/mainClass.java)
-![Untitled](![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/39bf1993-5f31-46df-91bf-2aad6c81e100)
+![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/39bf1993-5f31-46df-91bf-2aad6c81e100)
 
 </details>
 
