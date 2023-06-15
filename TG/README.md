@@ -98,4 +98,52 @@ Dentre as funcionalidades que desenvolvi, estão:
  ####[Acesse o código completo](https://github.com/silvercod3/Athena/commit/f6d04bef6e6a5bc6023f01f171181d97877fc607)
 ![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/5cfbf47e-44cb-47d4-acdc-4cbb5adf2e3d)
 <details>
+ 
+ ### Aprendizados Efetivos HS
+
+Através dessse projeto tive uma pequena noção da dimensão de possibilidades de criação através da programação, pois nunca tinha participado de algo tão grande quanto ele. Meus destaques são:
+
+- Programar na linguagem Python;
+- Utilizar bibliotecas para viabilização do projeto;
+- Modelar um banco de dados;
+- Utilizar banco de dados em memória.
+
+------
+------
+# Projeto 2: 2º semestre 2021
+
+### Parceiro Acadêmico
+
+Para esse semestre tivemos como parceiro a empresa Necto Systems sendo nosso cliente Carlos Eduardo, próprio direto de lá.
+
+### Visão do Projeto
+
+Desenvolver uma solução referente ao problema no monitoramento de um ou mais SGBDs remotos, bem como na coleta de métricas de funcionamento dos Banco de Dados presentes nos servidores da empresa, sendo essa soluçao um software integrado que monitora e apresenta métricas referentes ao uso e a saúde do SGBD em tempo real.
+
+---
+
+### Principais tecnologias
+
+- [Java](#java)
+- [PostgreSQL](#postgresql)
+
+#### Java
+
+Linguagem de programação de alto nível conhecida por sua robustez e portabilidade. Com uma sintaxe intuitiva e orientação a objetos, é uma escolha popular para desenvolvimento de software escalável, aplicações empresariais e sistemas embarcados.
+
+#### PostgreSQL
+
+Banco de dados relacional altamente confiável e flexível, que conta com recursos avançados e suporte para consultas complexas. Sua comunidade ativa e atualizações regulares garantem sua eficiência e segurança. Uma escolha confiável para armazenar e gerenciar dados com excelência.
+
+---
+
+### Contribuições pessoais
+
+### Aprendizados Efetivos HS
+
+-----
+-----
+
+# Projeto 3: 1º semestre 2023
+
 
