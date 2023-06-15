@@ -216,7 +216,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 <details>
 <summary>Implementação de testes unitários</summary>
 
-#### [Acesse o código completo](https://github.com/Thunder53/Dom-Rock/commit/d8c3707f29854266447e257efa452e0a715389a3)
+#### [Acesse o código](https://github.com/Thunder53/Dom-Rock/commit/d8c3707f29854266447e257efa452e0a715389a3)
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/2469450b-6753-43b9-94ab-8d59de43e3c9)
 
 </details>
@@ -225,7 +225,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 <details>
 <summary>Gráfico "Top 10 Produtos" mais vendidos (back e frontend)</summary>
  
-#### Acesse o código completo [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/ProdutoController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/chartAdmin.js)
+#### Acesse o código [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/ProdutoController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/chartAdmin.js)
  
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/0af04379-0106-4f43-854d-78324fdb9117)
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/451e61fa-24a9-4786-8dc7-0ffb65f79ccb)
@@ -235,6 +235,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 <details>
 <summary>Atualização de vendas estimadas (back e fronted)</summary>
  #### Acesse o código [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/VendaController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/formMinhasVendas.js)
+ 
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/82010a73-8459-4e8c-bbed-19bb13696b1f)
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/3065f405-4477-4755-ba4b-452700e96440)
 
