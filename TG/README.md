@@ -169,4 +169,39 @@ Como meu primeiro projeto utilizando Java, pude aprender de forma mais concreta 
 
 # Projeto 3: 1º semestre 2023
 
+Nesse semestre nosso parceiro foi a empresa Dom Rock, onde trabalhamos diretamente com o proprietário André.
+
+
+![domrock](https://github.com/ludmila-chagas/bertoti/assets/81494654/59442131-7b49-4daf-a069-7c5724a8c1f3)
+
+### Visão do Projeto
+A Dom Rock recebe a predição de vendas de seus clientes em formato csv tendo que padronizar todos os arquivos antes do uso, sendo assim sentiu necessidade de uma aplicação web que facilitaria a entrada destes dados em um padrão definido diminuindo o tempo gasto com a padronização. 
+A solução proposta consiste em lidar com o histórico de movimentação de produtos (vendas e estoque), predição de faturamento (feito por um algoritmo de IA já existente) e a entrada de dados oriundas da força de vendas quanto ao planejamento futuro.
+
+---
+
+### Principais tecnologias
+
+- Java
+- Spring
+- PostgreSQL
+- HTML
+- CSS
+- Javascript
+
+#### Spring
+Framework de desenvolvimento de aplicativos Java que fornece um ambiente robusto para a criação de aplicativos empresariais escaláveis e de alta qualidade. Com recursos como injeção de dependência e controle transacional, o Spring facilita o desenvolvimento, a manutenção e a integração de sistemas complexos, permitindo que os desenvolvedores se concentrem na lógica de negócios.
+
+#### HTML
+Linguagem de marcação padrão para a criação de páginas da web. Utilizando tags e elementos, o HTML permite estruturar e organizar o conteúdo de uma página, incluindo textos, imagens, links e outros elementos interativos. É a base fundamental para a construção de sites e aplicativos web, fornecendo a estrutura básica e semântica para apresentar informações na internet.
+
+#### CSS
+Linguagem de estilo utilizada para definir a aparência e o layout de elementos em uma página da web. Com o CSS, é possível controlar cores, fontes, tamanhos, posicionamentos e outros aspectos visuais, permitindo a criação de interfaces atrativas e responsivas. Além disso, o CSS oferece recursos avançados, como animações e efeitos, para melhorar a experiência do usuário.
+
+#### Javascript
+Linguagem de programação versátil e amplamente utilizada no desenvolvimento web. Ela permite a criação de interatividade e dinamismo em páginas da web, possibilitando a manipulação de elementos HTML, a resposta a eventos do usuário e a comunicação com servidores. Com o JavaScript, é possível criar desde pequenos scripts até aplicativos web complexos, tornando a web mais dinâmica e envolvente para os usuários.
+
+---
+
+###Contribuições pessoais
 
