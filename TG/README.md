@@ -148,7 +148,7 @@ Novamente atuando como desenvolvedora, por esse projeto tive meu primeiro contat
 <details>
 <summary>Conexão com banco de dados e consultas no SGBD</summary>
 
-#### [Acesse o código completo]([https://github.com/silvercod3/Athena/commit/7a5d7c4662aa2f26c1cdf4de235729244a0af058](https://github.com/PhatomFatec/PI_Necto_Systems/blob/main/apiNectoSystem/src/packageCodificacao/mainClass.java))
+#### [Acesse o código completo]([https://github.com/silvercod3/Athena/commit/7a5d7c4662aa2f26c1cdf4de235729244a0af058](https://github.com/PhatomFatec/PI_Necto_Systems/blob/main/apiNectoSystem/src/packageCodificacao/mainClass.java)
 ![Untitled](![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/39bf1993-5f31-46df-91bf-2aad6c81e100)
 
 </details>
