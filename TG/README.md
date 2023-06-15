@@ -225,7 +225,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 <details>
 <summary>Gráfico "Top 10 Produtos" mais vendidos (back e frontend)</summary>
  
-####Acesse o código completo [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/ProdutoController.java) 
+#### Acesse o código completo [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/ProdutoController.java) 
 e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/chartAdmin.js)
  
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/0af04379-0106-4f43-854d-78324fdb9117)
