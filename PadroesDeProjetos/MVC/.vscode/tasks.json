@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "compile",
+        "type": "shell",
+        "command": "javac -cp .",
+        "group": "build",
+        "presentation": {
+          "reveal": "always"
+        },
+        "problemMatcher": {
+          "owner": "java",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):\\s+(error|warning):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "severity": 3,
+            "message": 4
+          }
+        }
+      },
+      {
+        "label": "run",
+        "type": "shell",
+        "command": "java -cp .",
+        "group": "none",
+        "presentation": {
+          "reveal": "always"
+        },
+        "dependsOn": "compile"
+      }
+    ]
+  }
