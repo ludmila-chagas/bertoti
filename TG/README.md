@@ -154,6 +154,11 @@ Novamente atuando como desenvolvedora, por esse projeto tive meu primeiro contat
 </details>
 
 ### Aprendizados Efetivos HS
+Como meu primeiro projeto utilizando Java, pude aprender de forma mais concreta os conceitos de programação orientada a objetos e as particularidades da linguagem. Além disso, como citei, também foi a minha primeira experiência vinculando um software a um banco de dados relacional, então também tive a oportunidade de entender mais sobre SQL. Meus detaques são:
+- Programar seguindo conceitos de POO;
+- Conceitos de banco de dados relacionais e SGBDs;
+- Utilizar a plataforma PostgreSQL;
+- Criar scripts de queries úteis em SQL.
 
 -----
 -----
