@@ -236,8 +236,8 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 <summary>Atualização de vendas estimadas (back e fronted)</summary>
  #### Acesse o código [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/VendaController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/formMinhasVendas.js)
  
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/82010a73-8459-4e8c-bbed-19bb13696b1f)
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/3065f405-4477-4755-ba4b-452700e96440)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/f493ba80-89a5-4ab9-a12c-18efae10b2f6)
+![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/869ccbe6-83db-4f09-afe9-622aabf6b75d)
 <details>
 
 
