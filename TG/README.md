@@ -89,15 +89,19 @@ Dentre as funcionalidades que desenvolvi, estão:
 
 <details>
 <summary>Dicas de estudos</summary>
- ####[Acesse o código completo](https://github.com/silvercod3/Athena/commit/7a5d7c4662aa2f26c1cdf4de235729244a0af058)
+
+#### [Acesse o código completo](https://github.com/silvercod3/Athena/commit/7a5d7c4662aa2f26c1cdf4de235729244a0af058)
 ![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/417867a7-d902-480b-b36a-3d798ea5c034)
-<details>
- 
+
+</details>
+
 <details>
 <summary>Metas de estudos e cadastro de disciplinas</summary>
- ####[Acesse o código completo](https://github.com/silvercod3/Athena/commit/f6d04bef6e6a5bc6023f01f171181d97877fc607)
+
+#### [Acesse o código completo](https://github.com/silvercod3/Athena/commit/f6d04bef6e6a5bc6023f01f171181d97877fc607)
 ![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/5cfbf47e-44cb-47d4-acdc-4cbb5adf2e3d)
-<details>
+
+</details>
  
  ### Aprendizados Efetivos HS
 
