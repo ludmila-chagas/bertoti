@@ -120,6 +120,8 @@ Através dessse projeto tive uma pequena noção da dimensão de possibilidades 
 
 Para esse semestre tivemos como parceiro a empresa Necto Systems sendo nosso cliente Carlos Eduardo, próprio direto de lá.
 
+![necto](https://github.com/ludmila-chagas/bertoti/assets/81494654/8cd44626-0363-483e-be1e-d4231bfdfce7)
+
 ### Visão do Projeto
 
 Desenvolver uma solução referente ao problema no monitoramento de um ou mais SGBDs remotos, bem como na coleta de métricas de funcionamento dos Banco de Dados presentes nos servidores da empresa, sendo essa soluçao um software integrado que monitora e apresenta métricas referentes ao uso e a saúde do SGBD em tempo real.
