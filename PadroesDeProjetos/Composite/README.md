@@ -1,1 +1,1 @@
-![Composite UML](https://github.com/ludmila-chagas/bertoti/assets/81494654/d6642a8d-6d0c-4830-8f7c-3913e819ae4f)
+![Composite diagrama UML](https://github.com/ludmila-chagas/bertoti/assets/81494654/05648d22-4d7c-49a2-8ccc-11c74c2445b4)
