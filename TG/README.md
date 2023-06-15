@@ -204,7 +204,7 @@ Linguagem de programação versátil e amplamente utilizada no desenvolvimento w
 ---
 
 ### Contribuições pessoais
-Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de commit constantemente. Também implementei a cultura de utilizar testes unitários para facilitar essa etapa importante no desenvolvimento de qualquer aplicação. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que carrego experiência com visualização de dados e criaçaõ de painéis.
+Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de commit constantemente. Também implementei a cultura de utilizar testes unitários para facilitar essa etapa importante no desenvolvimento de qualquer aplicação. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que carrego experiência com visualização de dados e criação de painéis.
 
 <details>
 <summary>Modelagem do banco de dados</summary>
@@ -240,7 +240,16 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/f493ba80-89a5-4ab9-a12c-18efae10b2f6)
 ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/869ccbe6-83db-4f09-afe9-622aabf6b75d)
  
-<details>
+</details>
+
+### Aprendizados Efetivos HS
+Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprender a manipular o processamento de dados em uma tela para o usuário final. Além disso, o que antes eram conceitos que havia entendido superficialmente hoje já estão consolidados, principalmente a respeito de Java, por ser o segundo projeto com backend desenvolvido nessa linguagem. Os destaques desse semestre vão para:
+
+- Consolidação de conhecimentos em Java;
+- Introdução a desenvolvimento frontend (HTML e CSS);
+- Introdução ao desenvolvimento web (pelo framework Spring);
+- Gitflow;
+- Cultura de testes.
 
 
 
