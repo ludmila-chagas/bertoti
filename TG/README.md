@@ -58,10 +58,10 @@ O propósito do projeto foi trazer para os estudantes em geral uma forma mais ce
 
 ### Principais tecnologias
 
-- [Python](#python)
-- [SQLite](#sqlite)
-- [SpeechRecognition](#speechrecognition)
-- [PyAudio](#pyaudio)
+- Python
+- SQLite
+- SpeechRecognition
+- PyAudio
 
 #### Python
 
@@ -128,8 +128,8 @@ Desenvolver uma solução referente ao problema no monitoramento de um ou mais S
 
 ### Principais tecnologias
 
-- [Java](#java)
-- [PostgreSQL](#postgresql)
+- Java
+- PostgreSQL
 
 #### Java
 
