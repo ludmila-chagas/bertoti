@@ -38,6 +38,11 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <summary>Projeto 3: 1º semestre 2023</summary>
 
 - [Início Projeto 3](#projeto-3-1º-semestre-2023)
+- [Parceiro Acadêmico](#parceiro-acadêmico-2)
+- [Visão do Projeto](#visão-do-projeto-2)
+- [Principais tecnologias](#principais-tecnologias-2)
+- [Contribuições pessoais](#contribuições-pessoais-2)
+- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-2)
 </details>
 
 ---
@@ -168,6 +173,8 @@ Como meu primeiro projeto utilizando Java, pude aprender de forma mais concreta 
 -----
 
 # Projeto 3: 1º semestre 2023
+
+### Parceiro Acadêmico
 
 Nesse semestre nosso parceiro foi a empresa Dom Rock, onde trabalhamos diretamente com o proprietário André.
 
