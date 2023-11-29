@@ -45,6 +45,17 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 - [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-2)
 </details>
 
+<details>
+<summary>Projeto 4: 2º semestre 2023</summary>
+
+- [Início Projeto 3](#projeto-4-2º-semestre-2024)
+- [Parceiro Acadêmico](#parceiro-acadêmico-3)
+- [Visão do Projeto](#visão-do-projeto-3)
+- [Principais tecnologias](#principais-tecnologias-3)
+- [Contribuições pessoais](#contribuições-pessoais-3)
+- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-3)
+</details>
+
 ---
 
 # Projeto 1: 1º semestre 2021
@@ -214,13 +225,6 @@ Linguagem de programação versátil e amplamente utilizada no desenvolvimento w
 Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de commit constantemente. Também implementei a cultura de utilizar testes unitários para facilitar essa etapa importante no desenvolvimento de qualquer aplicação. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que carrego experiência com visualização de dados e criação de painéis.
 
 <details>
-<summary>Modelagem do banco de dados</summary>
-
-![Modelo conceitual banco de dados](https://github.com/ludmila-chagas/bertoti/assets/81494654/e3964e56-252f-409e-816a-0ba14174fa06)
-
-</details>
-
-<details>
 <summary>Implementação de testes unitários</summary>
 
 #### [Acesse o código](https://github.com/Thunder53/Dom-Rock/commit/d8c3707f29854266447e257efa452e0a715389a3)
@@ -249,6 +253,13 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
  
 </details>
 
+<details>
+<summary>Modelagem do banco de dados</summary>
+
+![Modelo conceitual banco de dados](https://github.com/ludmila-chagas/bertoti/assets/81494654/e3964e56-252f-409e-816a-0ba14174fa06)
+
+</details>
+
 ### Aprendizados Efetivos HS
 Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprender a manipular o processamento de dados em uma tela para o usuário final. Além disso, o que antes eram conceitos que havia entendido superficialmente hoje já estão consolidados, principalmente a respeito de Java, por ser o segundo projeto com backend desenvolvido nessa linguagem. Os destaques desse semestre vão para:
 
@@ -257,6 +268,85 @@ Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprende
 - Introdução ao desenvolvimento web (pelo framework Spring);
 - Gitflow;
 - Cultura de testes.
+
+---
+---
+
+# Projeto 4: 2º semestre 2023
+
+### Parceiro Acadêmico
+
+Para o quarto semestre tivemos como parceiro a empresa Jaia Software.
+
+![jaia](https://github.com/ludmila-chagas/bertoti/assets/81494654/8b364285-c6c6-45f9-be53-fa011cf8eff8)
+
+### Visão do Projeto
+O desafio consiste em desenvolver um sistema abrangente para controlar anomalias identificadas em um Laudo de Inspeção Predial, com funcionalidades-chave como diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Esse sistema é crucial para melhorar a gestão e eficácia na correção de anomalias, promovendo a preservação do patrimônio e tomada de decisões informadas.
+
+Solução
+---
+
+### Principais tecnologias
+
+- Java
+- Spring Boot
+- Javascript
+- Oracle Cloud
+- HTML
+- Vue.js
+- Axios
+- CSS
+
+#### Oracle Cloud
+Plataforma de nuvem da Oracle para hospedagem e gerenciamento eficiente de aplicativos, oferecendo serviços abrangentes, como armazenamento escalável e soluções de banco de dados gerenciadas. Ideal para ambientes computacionais flexíveis, abrangendo desde nuvem pública até opções privadas e híbridas.
+
+#### Vue.js
+Framework JavaScript progressivo para construir interfaces de usuário em aplicações web. Destaca-se por sua simplicidade e flexibilidade, facilitando a criação de componentes reutilizáveis. Com um núcleo focado na visualização, Vue.js é uma escolha popular para o desenvolvimento ágil e escalável de interfaces interativas.
+
+#### Axios
+Biblioteca JavaScript para fazer requisições HTTP em aplicações web, simplificando a comunicação entre frontend e backend. Com suporte a cancelamento de requisições e tratamento de erros, o Axios oferece uma API intuitiva para solicitações assíncronas, contribuindo para um código mais robusto e eficiente.
+
+---
+
+### Contribuições pessoais
+Segui com minha atuação no desenvolvimento, dessa vez me desafiando a atuar nas duas primeiras sprints apenas com tarefas de front-end. Por ter sido meu contato inicial de maneira mais profunda com essa parte de uma aplicação, tive diversos aprendizados e contato com várias tecnologias novas de uma forma como não havia visto antes. 
+
+<details>
+<summary>Tela de cadastro de departamento e itens de checklist</summary>
+Tendo sido meu primeiro contato com Vue.js, fiz a ligação das minhas funções com as rotas de requisição do back-end pelo axios e implementei as variáveis reativas para carregamento e visualização dos dados na tela. Fui responsável por todas as funcionalidades dela, sendo envio de dados para cadastro de um departamento em uma rota e de checklist em outra, por meio de um callback, bem como edição e exclusão das informações inseridas nos campos das variáveis reativas.
+ 
+ ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/bc6a6ac8-0279-4201-8721-a0a3449e2ac1)
+ ![axios](https://github.com/ludmila-chagas/bertoti/assets/81494654/ce999d31-9303-47f1-b7f2-36e1a3107f84)
+
+
+</details>
+
+
+<details>
+<summary>Tela de consulta de departamento</summary>
+O maior desafio dessa tela foi conseguir recuperar dados do back-end para display em um modal, que é aberto conforme interação do usuário. Esses dados além de serem visíveis, também são editáveis no mesmo campo, graças a funcionalidade do atributo Props do Vue.js.
+
+![consulta-segmento](https://github.com/ludmila-chagas/bertoti/assets/81494654/74aa0ee8-1308-4f1c-9739-25f8f0d1fa3f)
+ 
+ 
+</details>
+
+<details>
+<summary>Mapeamento de entidades JPA e implementação de CRUD</summary>
+Aqui voltei minha atenção ao back-end para conclusão do mapeamento das duas últimas entidades da aplicação. Além do mapeamento também fiz o relacionamento dessas entidades com outra classes.
+
+![usuario](https://github.com/ludmila-chagas/bertoti/assets/81494654/cddf274b-7d76-452f-937c-3952d76c1cf3)
+
+
+</details>
+
+### Aprendizados Efetivos HS
+Meu principal aprendizado foi a parte de front-end, pela primeira experiência com foco total nessa etapa e também pela abordagem da tecnologia Vue.js feita na disciplina de Laboratório de Desen. de Banco de Dados IV. Porém, foi muito valioso revisitar meus conhecimentos de back-end no final do projeto, tendo sido uma ótima maneira de fixar o conteúdo. Gostaria de destacar como aprendizados:
+
+- Consolidação de conhecimentos em JPA;
+- Consolidação de conhecimento em front-end (Vue.js e Axios);
+- Introdução a estilização front-end (CSS).
+
 
 
 
