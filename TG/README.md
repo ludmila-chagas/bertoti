@@ -48,12 +48,12 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <details>
 <summary>Projeto 4: 2º semestre 2023</summary>
 
-- [Início Projeto 3](#projeto-4-2º-semestre-2024)
-- [Parceiro Acadêmico](#parceiro-acadêmico-3)
-- [Visão do Projeto](#visão-do-projeto-3)
-- [Principais tecnologias](#principais-tecnologias-3)
-- [Contribuições pessoais](#contribuições-pessoais-3)
-- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-3)
+- [Início Projeto 4]
+- [Parceiro Acadêmico]
+- [Visão do Projeto]
+- [Principais tecnologias]
+- [Contribuições pessoais]
+- [Aprendizados Efetivos HS]
 </details>
 
 ---
