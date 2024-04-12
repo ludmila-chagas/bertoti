@@ -16,7 +16,6 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <summary>Projeto 1: 1º semestre 2021</summary>
 
 - [Início Projeto 1](#projeto-1-1º-semestre-2021)
-- [Parceiro Acadêmico](#parceiro-acadêmico)
 - [Visão do Projeto](#visão-do-projeto)
 - [Principais tecnologias](#principais-tecnologias)
 - [Contribuições pessoais](#contribuições-pessoais)
@@ -27,7 +26,6 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <summary>Projeto 2: 2º semestre 2021</summary>
 
 - [Início Projeto 2](#projeto-2-2º-semestre-2021)
-- [Parceiro Acadêmico](#parceiro-acadêmico-1)
 - [Visão do Projeto](#visão-do-projeto-1)
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
@@ -38,7 +36,6 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <summary>Projeto 3: 1º semestre 2023</summary>
 
 - [Início Projeto 3](#projeto-3-1º-semestre-2023)
-- [Parceiro Acadêmico](#parceiro-acadêmico-2)
 - [Visão do Projeto](#visão-do-projeto-2)
 - [Principais tecnologias](#principais-tecnologias-2)
 - [Contribuições pessoais](#contribuições-pessoais-2)
@@ -248,33 +245,118 @@ Novamente atuando como desenvolvedora, por esse projeto tive meu primeiro contat
 
 
 <details>
-<summary>Conexão com banco de dados e consultas no SGBD</summary>
+<summary>Conexão com banco de dados e consultas no </summary>
+<p>No código, foram criados dois métodos em Java para recuperar consultas com base em tempos de execução. O método gettopQuickQuery() retorna as consultas com menor tempo de execução lendo o número de consultas de um arquivo queries.txt, enquanto getTopSlowestQueries() retorna as consultas com maior tempo de execução. Ambos os métodos usam um HashMap para armazenar os resultados e lidam com erros durante a execução das consultas SQL. Esses métodos visam monitorar e otimizar o desempenho do banco de dados.</p>
+ 
+Trecho do código:
 
-#### [Acesse o código completo](https://github.com/PhatomFatec/PI_Necto_Systems/blob/main/apiNectoSystem/src/packageCodificacao/mainClass.java)
-![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/39bf1993-5f31-46df-91bf-2aad6c81e100)
+´´´
+
+	private HashMap<String, String> gettopQuickQuery() {
+		HashMap<String, String> response = new HashMap<>();
+		
+		ArrayList<String> queries = new ArrayList<String>();
+
+		String path = "queries.txt";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path))){
+            String line = br.readLine();
+
+            while (line != null) {
+                //System.out.println(line);
+                line = br.readLine();
+                queries.add(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Erro: " + e);
+        }
+        
+		String getquery = queries.get(0);
+
+		try {
+			String sql = "SELECT (total_exec_time / 1000 / 60) as total_minutes, query FROM pg_stat_statements ORDER BY  (total_exec_time / 1000 / 60) asc LIMIT " + getquery;
+
+			PreparedStatement pesquisa = con.prepareStatement(sql);
+
+			ResultSet result = pesquisa.executeQuery();
+
+			while (result.next()) {
+				response.put(result.getString("total_minutes"), result.getString("query"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(
+					"Houve um problema ao requisitar as queries com menor tempo de execução de todos os banco de dados!");
+		}
+
+		return response;
+	}
+
+	private HashMap<String, String> getTopSlowestQueries() {
+		HashMap<String, String> response = new HashMap<>();
+		
+		ArrayList<String> queries = new ArrayList<String>();
+		
+		String path = "queries.txt";
+		
+        try (BufferedReader br = new BufferedReader(new FileReader(path))){
+            String line = br.readLine();
+
+            while (line != null) {
+                //System.out.println(line);
+                line = br.readLine();
+                queries.add(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Erro: " + e);
+        }
+        
+		String getquery = queries.get(1);
+
+		try {
+			String sql = "SELECT (total_exec_time / 1000 / 60) as total_minutes, query FROM pg_stat_statements ORDER BY  (total_exec_time / 1000 / 60) desc LIMIT " + getquery;
+
+			PreparedStatement pesquisa = con.prepareStatement(sql);
+
+			ResultSet result = pesquisa.executeQuery();
+
+			while (result.next()) {
+				response.put(result.getString("total_minutes"), result.getString("query"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(
+					"Houve um problema ao requisitar as queries com maior tempo de execução de todos os banco de dados!");
+		}
+
+		return response;
+	}
+´´´
 
 </details>
 
-### Aprendizados Efetivos HS
-Como meu primeiro projeto utilizando Java, pude aprender de forma mais concreta os conceitos de programação orientada a objetos e as particularidades da linguagem. Além disso, como citei, também foi a minha primeira experiência vinculando um software a um banco de dados relacional, então também tive a oportunidade de entender mais sobre SQL e sobre CRUD. Meus detaques são:
+### Aprendizados Efetivos em Hard Skills
+Como meu primeiro projeto utilizando Java, foi uma ótima introdução a essa linguagem, me fazendo iniciar o aprendizado sobre os conceitos de programação orientada a objetos. Além disso, como citei, também foi a minha primeira experiência vinculando um software a um banco de dados relacional, então também tive a oportunidade de solidificar mais meu entendimento de SQL, aprender a fazer operações CRUD (Create, Read, Udate, Delete) e SGBDs (Sistemas Gerenciadores de Bancos de Dados). Meus detaques são:
+
+- Entender um banco de dados relacional;
+- Programar seguindo conceitos de POO (Programação Orientada a Objetos);
 - Programar em Java;
-- Programar seguindo conceitos de POO;
-- Como usar banco de dados relacionais e SGBDs;
-- Como usar PostgreSQL;
-- Criar scripts de queries úteis em SQL;
-- Interação direta com cliente, seguindo metodologia ágil Scrum.
+- Como gerenciar um SGBD (PostgreSQL);
+- Scripts mais avançados em SQL;
+
+### Aprendizados Efetivos em Soft Skills
+Como foi o primeiro projeto da faculdade onde nos relacionamos diretamente com o cliente, dando início a essa dinâmica enriquecedora, que não era um representante ds faculdade e sim uma empresa apoiadora, posso destacar como soft skills adquiridas:
+
+- Interagir com um cliente real (empresa terceira), seguindo metodologia ágil Scrum;
+- Adaptação na equipe de desenvolvimento com novos integrantes.
+
 
 -----
 -----
 
 # Projeto 3: 1º semestre 2023
 
-### Parceiro Acadêmico
-
-Nesse semestre nosso parceiro foi a empresa Dom Rock, onde trabalhamos diretamente com o proprietário André.
-
-
-![domrock](https://github.com/ludmila-chagas/bertoti/assets/81494654/59442131-7b49-4daf-a069-7c5724a8c1f3)
+#### 3º Semestre do Curso | Parceiro Acadêmico: Dom Rock
 
 ### Visão do Projeto
 A Dom Rock recebe a predição de vendas de seus clientes em formato csv tendo que padronizar todos os arquivos antes do uso, sendo assim sentiu necessidade de uma aplicação web que facilitaria a entrada destes dados em um padrão definido diminuindo o tempo gasto com a padronização. 
@@ -306,13 +388,31 @@ Linguagem de programação versátil e amplamente utilizada no desenvolvimento w
 ---
 
 ### Contribuições pessoais
-Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de commit constantemente. Também implementei a cultura de utilizar testes unitários para facilitar essa etapa importante no desenvolvimento de qualquer aplicação. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que carrego experiência com visualização de dados e criação de painéis.
+Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de versoões constantemente. Além disso, me arrisquei a aprender e implementar testes unitários para garantir maior qualidade e robustez do código, aumentando a confiança na sua funcionalidade e facilitando futuras alterações. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que já tinha uma habilidade com visualização de dados e criação de painéis, vinda de experiências profissionais.
 
 <details>
 <summary>Implementação de testes unitários</summary>
+<p>Neste código eu criei um teste unitário em Java utilizando o framework Spring Boot para testar a criação de um objeto Cliente a partir de um objeto ClienteRequestDTO. O teste verifica se os atributos do objeto Cliente são configurados corretamente com base nos valores fornecidos no ClienteRequestDTO.</p>
 
-#### [Acesse o código](https://github.com/Thunder53/Dom-Rock/commit/d8c3707f29854266447e257efa452e0a715389a3)
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/2469450b-6753-43b9-94ab-8d59de43e3c9)
+```
+@SpringBootTest
+class ClienteTest {
+
+    @Test
+    public void testCreateClienteFromDTO() {
+        ClienteRequestDTO dto = new ClienteRequestDTO("Cliente 1", "Gerente 1", "Produto A", "Produto B", "Produto C");
+
+
+        Cliente cliente = new Cliente(dto);
+
+        assertEquals("Cliente 1", cliente.getNome_cliente());
+        assertEquals("Gerente 1", cliente.getNome_gerencia());
+        assertEquals("Produto A", cliente.getProduto_a());
+        assertEquals("Produto B", cliente.getProduto_b());
+        assertEquals("Produto C", cliente.getProduto_c());
+    }
+}
+```
 
 </details>
 
