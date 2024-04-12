@@ -49,7 +49,6 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 <summary>Projeto 4: 2º semestre 2023</summary>
 
 - [Início Projeto 4]
-- [Parceiro Acadêmico]
 - [Visão do Projeto]
 - [Principais tecnologias]
 - [Contribuições pessoais]
@@ -58,17 +57,15 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 
 ---
 
-# Projeto 1: 1º semestre 2021
+# [Projeto 1: 1º semestre 2021](https://github.com/silvercod3/Athena)
 
-### Parceiro Acadêmico
-
-O professor Fabiano Sabha atuou como nosso cliente interno do projeto.
+#### 1º Semestre do Curso | Parceiro Acadêmico: Professor Fabiano Sabha
 
 ---
 
 ### Visão do Projeto
 
-O propósito do projeto foi trazer para os estudantes em geral uma forma mais centralizada e organizada de cuidar da vida acadêmica e se manter atualizado em suas atividades através de uma assistente pessoal de estudos, a Athena.
+O propósito do projeto foi trazer para os estudantes em geral uma forma mais centralizada e organizada de cuidar da vida acadêmica e se manter atualizado em suas atividades através de uma assistente pessoal de estudos, a Athena, tendo como diferencial é reunir diversas ferramentas úteis em um único lugar. Seu funcionamento é exclusivamente via comandos de voz.
 
 ---
 
@@ -81,7 +78,7 @@ O propósito do projeto foi trazer para os estudantes em geral uma forma mais ce
 
 #### Python
 
-Linguagem de programação de alto nível, amplamente utilizada devido à sua simplicidade e legibilidade. É ideal para desenvolvimento rápido de aplicativos, análise de dados e automação de tarefas.
+Linguagem de programação de alto nível, amplamente utilizada devido à sua simplicidade e legibilidade, sendo muito recomendável para programadores iniciantes. Possibilita desenvolvimento de aplicações web, ciência de dados, Inteligência Artificial e Machine Learnig, automação, jogos, aplicativos desktop entre outros, destacando-se também pela vasta biblioteca de suporte.
 
 #### SQLite
 
@@ -99,48 +96,135 @@ Biblioteca em Python que fornece recursos para gravação e reprodução de áud
 
 ### Contribuições pessoais
 
-Nesse projeto atuei principalmente como desenvolvedora, porém foi um ponto de apoio para implementação da metodologia ágil Scrum no time, visto que já tinha a experiência de trabalhar com ela, então fortaleci no engajamento dos rituais utilizados para que o trabalho em equipe fluísse da melhor forma possível.
+Nesse projeto atuei pela primeira vez como desenvolvedora e também como um ponto de apoio para implementação da metodologia ágil Scrum no time, visto que já tinha experiência com ela no meu trabalho formal (que não era na área), então fortaleci no engajamento dos rituais para que o trabalho em equipe fluísse da melhor forma possível.
 
 Dentre as funcionalidades que desenvolvi, estão:
 
 <details>
 <summary>Dicas de estudos</summary>
+<p>Através de pesquisas fiz uma base de dados com dicas de estudo para popular nossa assistente, com a utilização do módulo sqlite3 para interagir com um banco de dados SQLite. O código se conecta ao banco de dados dicas_athena.db, cria um cursor para executar comandos SQL e contém comandos para criar uma tabela chamada "dicas" e inserir várias dicas de estudo nessa tabela. No final, o comando banco.commit() é usado para confirmar as alterações no banco de dados. Essas dicas posteriormente serviram para consulta pelo usuário da aplicação.</p>
 
-#### [Acesse o código completo](https://github.com/silvercod3/Athena/commit/7a5d7c4662aa2f26c1cdf4de235729244a0af058)
-![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/417867a7-d902-480b-b36a-3d798ea5c034)
+Trecho do código:
+
+```
+import sqlite3
+
+banco = sqlite3.connect('dicas_athena.db')
+
+cursor = banco.cursor()
+
+# CÓDIGO PARA CRIAÇÃO DA TABELA: cursor.execute("CREATE TABLE dicas (dicas text)")
+
+# CÓDIGO PADRÃO PARA INSERÇÃO DE DADOS NA TABELA: cursor.execute("INSERT INTO dicas VALUES ('')")
+
+#cursor.execute("INSERT INTO dicas VALUES ('Defina metas e depois, divida essas metas em elementos menores. Em vez de pensar em estudar 10 capítulos de uma vez, leia 2 por dia, por exemplo.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Crie objetivos diários, semanais e mensais. É um jeito de acompanhar seu progresso e de ver o que ainda precisa de atenção extra.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Escolha um bom lugar de estudos. Selecionar uma área desconfortável ou improvisada demais vai comprometer o seu desempenho. O ideal é escolher um lugar tranquilo, com boa iluminação e boa temperatura.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Faça com que o espaço esteja sempre arrumado para não causar distrações. Após finalizar um dia de estudo, deixe o ambiente pronto para o seguinte. Assim, facilita manter a organização.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Um modo de manter a sua motivação no alto é se recompensar por cumprir metas. Pode ser bem simples: um chocolate após o estudo de um capítulo ou um episódio da sua série favorita são boas recompensas.')")
+
+#banco.commit()
+```
 
 </details>
 
 <details>
-<summary>Metas de estudos e cadastro de disciplinas</summary>
+<summary>Cadastro de disciplinas e metas de estudo</summary>
+<p>Desenvolvi uma lógica interativa para cadastro de matérias de estudo, definição de metas de estudo (semanal, quinzenal ou mensal) e registro de horas estudadas por matéria. O programa utiliza loops while para permitir ao usuário cadastrar múltiplas matérias, definir metas e adicionar horas estudadas. Os dados são armazenados em uma lista e escritos em um arquivo de texto. Além disso, via comando SQL os dados também são inseridos em uma tabela do banco de dados.</p>
 
-#### [Acesse o código completo](https://github.com/silvercod3/Athena/commit/f6d04bef6e6a5bc6023f01f171181d97877fc607)
-![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/5cfbf47e-44cb-47d4-acdc-4cbb5adf2e3d)
+Trecho do código:
+
+```
+while True:
+    materia_cadastro = str(input('Qual matéria gostaria de cadastrar: ')).strip()
+    materia.append(materia_cadastro)
+    resp = str(input('Gostaria de cadastrar outra materia ? [s/n]: ')).strip().lower()[0]
+    if resp != "n":
+        if resp == "s":
+            continue
+        else:
+            print('Dado inconsistente, tente novamente')
+            continue
+    else:
+        break
+print(''' Defina uma meta
+ [1] - Meta semanal
+ [2] - Meta quinzenal
+ [3] - Meta mensal''')
+while True:
+    resp_meta = int(input('Qual a meta desejada ?: '))
+    if resp_meta not in range(1, 4):
+        print('Valor digitado incorreto, tente novamente por gentileza')
+        continue
+    else:
+        if resp_meta == 1:
+            for c in materia:
+                time = str(input(f'Digite quantas horas para sua meta SEMANAL. - Matéria: "{c}" [hh:mm]: ')).strip().replace(" ", ":").replace(" e ", ":")
+                tempo_estudado.append(time)
+        if resp_meta == 2:
+            for c in materia:
+                time = str(input(f'Digite quantas horas para sua meta QUINZENAL. - Matéria: "{c}" [hh:mm]: ')).strip().replace(" ", ":").replace(" e ", ":")
+                tempo_estudado.append(time)
+        if resp_meta == 3:
+            for c in materia:
+                time = str(input(f'Digite quantas horas para sua meta MENSAL. - Matéria: "{c}" [hh:mm]: ')).strip().replace(" ", ":").replace(" e ", ":")
+                tempo_estudado.append(time)
+    break
+while True:
+    resp_hora = str(input('Para qual matéria gostaria de adcionar horas estudadas ?: '))
+    if resp_hora not in materia:
+        print('Não encontrei essa matéria, tente novamente')
+        continue
+    else:
+        hora = str(input(f'Quantas horas gostaria de cadastrar para a matéria "{resp_hora}" [hh:mm]: '))
+        hora_estudada.append(hora)
+        continuar = str(input('Gostaria de continuar ? [s/n]: ')).strip().lower()[0]
+        if continuar != "n":
+            if continuar == "s":
+                continue
+            else:
+                print('Dado inconsistente, tente novamente')
+                continue
+        else:
+            break
+with open("novo_dado.txt", "a+", encoding='utf-8') as arquivo:
+    for pos, c in enumerate(materia):
+        arquivo.write(f"Matéria: {materia[pos]} - Tempo/Meta = {tempo_estudado[pos]} - Hora estudada {hora_estudada[pos]}\n" )
+        vsql = "INSERT INTO Metas (MATERIA,META,HORA_ESTUDADA)VALUES('"+materia[pos]+"','"+tempo_estudado[pos]+"','"+hora_estudada[pos]+"')"
+        inserir(vcon, vsql)
+```
 
 </details>
  
- ### Aprendizados Efetivos HS
+ ### Aprendizados Efetivos em Hard Skills
 
-Através dessse projeto tive uma pequena noção da dimensão de possibilidades de criação através da programação, pois nunca tinha participado de algo tão grande quanto ele. Meus destaques são:
+Através dessse projeto tive uma pequena noção da dimensão de possibilidades de desenvolvimento através da programação, pois nunca tinha participado de algo tão complexo quanto ele. Meus destaques de aprendizados são:
 
-- Programar na linguagem Python;
+- Banco de dados (em memória) e comandos básicos do SQL;
+- Programação na linguagem Python;
+- Modelar um banco de dados simples;
+- Uso de estruturas de repetição e condições (while e if);
 - Utilizar bibliotecas para viabilização do projeto;
-- Modelar um banco de dados;
-- Utilizar banco de dados em memória.
+
+### Aprendizados Efetivos em Soft Skills
+
+Já em relação as soft skills posso destacar:
+
+- Trabalho em equipe;
+- Trabalho remoto (o semestre foi concluído de forma remota por conta da pandemia de Covid-19);
+- Comunicação clara e objetiva;
+- Proatividade.
+
 
 ------
 ------
 # Projeto 2: 2º semestre 2021
 
-### Parceiro Acadêmico
-
-Para esse semestre tivemos como parceiro a empresa Necto Systems sendo nosso cliente Carlos Eduardo, próprio direto de lá.
-
-![necto](https://github.com/ludmila-chagas/bertoti/assets/81494654/8cd44626-0363-483e-be1e-d4231bfdfce7)
+#### 2º Semestre do Curso | Parceiro Acadêmico: Necto Systems
 
 ### Visão do Projeto
 
-Desenvolver uma solução referente ao problema no monitoramento de um ou mais SGBDs remotos, bem como na coleta de métricas de funcionamento dos Banco de Dados presentes nos servidores da empresa, sendo essa soluçao um software integrado que monitora e apresenta métricas referentes ao uso e a saúde do SGBD em tempo real.
+Desenvolver uma solução para monitoramento de um ou mais SGBDs (Sistema Gerenciador de Banco de Dados) remotos, bem como na coleta de métricas de funcionamento dos Banco de Dados presentes nos servidores da empresa, sendo essa solução um software integrado que monitora e apresenta métricas referentes ao uso e a saúde do SGBD em tempo real.
 
 ---
 
