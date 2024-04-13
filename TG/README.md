@@ -391,8 +391,160 @@ Linguagem de programação versátil e amplamente utilizada no desenvolvimento w
 Mais uma vez atuando como desenvolvedora, além de programar também atuei como ponto focal de boas práticas quanto ao versionamento de código, trazendo para o grupo conceitos de Gitflow e resolvendo conflitos de versoões constantemente. Além disso, me arrisquei a aprender e implementar testes unitários para garantir maior qualidade e robustez do código, aumentando a confiança na sua funcionalidade e facilitando futuras alterações. Outra menção importante foi minha atuação fundamental na etapa de entendimento da dor do cliente, bem como na definição de backlog e priorização de tasks por sprints, visto que já tinha uma habilidade com visualização de dados e criação de painéis, vinda de experiências profissionais.
 
 <details>
+<summary>Atualização de vendas estimadas (back e fronted)</summary>
+<p>Implementei um método em Java com Spring Boot para atualizar vendas, verificando se a venda existe, se ainda não foi atualizada e se está dentro do prazo de 7 dias desde a criação (requisito do cliente). O método retorna mensagens específicas caso a venda já tenha sido atualizada, esteja fora do prazo ou não seja encontrada.</p>
+
+ Trecho do código backend:
+ 
+```
+
+	@CrossOrigin(origins = "*", allowedHeaders = "*")
+	    @Transactional
+	    @Modifying
+	    @PutMapping("/atualizar_venda/{id_venda}/{quant_vendida}")
+	    public ResponseEntity<Object> atualizarVenda(@PathVariable Long id_venda, @PathVariable Float quant_vendida) {
+	        Venda venda = repository.findById(id_venda).orElse(null);
+	
+	        if (venda != null) {
+	            if (venda.getAtualizada_em() == null) {
+	                Date dataAtual = new Date();
+	                Date dataCriacao = venda.getCriada_em();
+	                long diff = dataAtual.getTime() - dataCriacao.getTime();
+	                long diffDays = TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+	
+	                if (diffDays <= 7) {
+	                    venda.setQuant_vendida(quant_vendida);
+	                    venda.setAtualizada_em(new Date());
+	                    repository.save(venda);
+	                    return ResponseEntity.ok().body("{\"message\": \"Venda atualizada com sucesso!\"}");
+	                } else {
+	                    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"message\": \"Fora do prazo\"}");
+	                }
+	            } else {
+	                return ResponseEntity.ok().body("{\"message\": \"Venda já atualizada\"}");
+	            }
+	        }
+	
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"message\": \"Venda não encontrada\"}");
+	    }
+```
+
+Trecho do código fronted:
+
+```
+function editar_vendas() {
+  if (selectedRow) {
+    const selectedId = selectedRow.getAttribute('data-id');
+    console.log('Cadastro de Vendas - Linha selecionada. ID:', selectedId);
+    const id_venda = selectedRow.querySelector(".id_venda").textContent;
+
+    const quantidadeVendida = prompt('Informe a quantidade vendida:');
+
+    const url = `http://localhost:8080/venda/atualizar_venda/${id_venda}/${quantidadeVendida}`;
+
+    fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        buscar(); 
+      })
+      .catch(error => {
+        console.error('Erro na requisição:', error);
+      });
+    
+    selectedRow.classList.remove('selected');
+    selectedRow = null;
+  } else {
+    alert('Clique na linha que você deseja alterar.');
+  }
+}
+```
+ 
+</details>
+
+
+<details>
+<summary>Gráfico "Top 10 Produtos" mais vendidos (back e frontend)</summary>
+<p>Implementei um método em Java com Spring Boot que retorna os top 10 produtos mais vendidos, utilizando uma consulta SQL para somar a quantidade vendida de cada produto e ordenar o resultado. O método utiliza o JdbcTemplate do Spring para executar a consulta e mapear o resultado para uma lista de mapas com o nome do produto e a quantidade total vendida.</p>
+
+ Trecho do código backend:
+
+```
+   @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @GetMapping("/topProdutos")
+    public List<Map<String, Object>> getTopProdutos() {
+        List<Map<String, Object>> topProdutos = new ArrayList<>();
+        String sql = "SELECT p.nome_produto, " +
+                "SUM(v.quant_vendida) AS total_vendido " +
+                "FROM produto p " +
+                "JOIN venda v ON p.cod_produto = v.fk_produto_cod_produto " +
+                "GROUP BY p.nome_produto, v.fk_produto_cod_produto " +
+                "ORDER BY total_vendido DESC " +
+                "LIMIT 10";
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql);
+        for (Map<String, Object> row : rows) {
+            Map<String, Object> produto = new HashMap<>();
+            produto.put("nome_produto", ((String) row.get("nome_produto")).trim());
+            produto.put("total_vendido", row.get("total_vendido"));
+            topProdutos.add(produto);
+        }
+        return topProdutos;
+    }
+```
+
+
+
+ Trecho do código fronted:
+```
+function generateProdutosChart() {
+  fetch("http://localhost:8080/produto/topProdutos")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var dados = data.map(function (item) {
+        return { y: item.nome_produto, a: item.total_vendido };
+      });
+
+      var config = {
+        data: dados,
+        xkey: "y",
+        ykeys: "a",
+        labels: ["Total"],
+        fillOpacity: 0.6,
+        hideHover: "auto",
+        behaveLikeLine: true,
+        resize: true,
+        pointFillColors: ["#ffffff"],
+        pointStrokeColors: ["black"],
+        lineColors: ["#005eff"],
+        xLabelAngle: 45,
+      };
+
+      config.element = "stackedProdutos";
+      config.stacked = true;
+      Morris.Bar(config);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+```
+
+
+</details>
+
+
+<details>
 <summary>Implementação de testes unitários</summary>
 <p>Neste código eu criei um teste unitário em Java utilizando o framework Spring Boot para testar a criação de um objeto Cliente a partir de um objeto ClienteRequestDTO. O teste verifica se os atributos do objeto Cliente são configurados corretamente com base nos valores fornecidos no ClienteRequestDTO.</p>
+
+Trecho do código:
 
 ```
 @SpringBootTest
@@ -418,38 +570,19 @@ class ClienteTest {
 
 
 <details>
-<summary>Gráfico "Top 10 Produtos" mais vendidos (back e frontend)</summary>
- 
-#### Acesse o código [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/ProdutoController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/chartAdmin.js)
- 
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/0af04379-0106-4f43-854d-78324fdb9117)
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/451e61fa-24a9-4786-8dc7-0ffb65f79ccb)
-
-</details>
-
-<details>
-<summary>Atualização de vendas estimadas (back e fronted)</summary>
- 
- #### Acesse o código [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Back-end/src/main/java/com/domrock/controller/VendaController.java) e [aqui](https://github.com/Thunder53/Dom-Rock/blob/main/Front-end/javascript/formMinhasVendas.js)
- 
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/f493ba80-89a5-4ab9-a12c-18efae10b2f6)
-![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/869ccbe6-83db-4f09-afe9-622aabf6b75d)
- 
-</details>
-
-<details>
 <summary>Modelagem do banco de dados</summary>
+<p>Apesar de ser o terceiro semestre e de já ter ajudado no processo de modelagem anteriormente, foi minha primeira vez modelando o banco completo e totalmente sozinha, o que me fez criar total confiança de realizar esse processo de forma autônoma.</p>
 
 ![Modelo conceitual banco de dados](https://github.com/ludmila-chagas/bertoti/assets/81494654/e3964e56-252f-409e-816a-0ba14174fa06)
 
 </details>
 
 ### Aprendizados Efetivos HS
-Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprender a manipular o processamento de dados em uma tela para o usuário final. Além disso, o que antes eram conceitos que havia entendido superficialmente hoje já estão consolidados, principalmente a respeito de Java, por ser o segundo projeto com backend desenvolvido nessa linguagem. Os destaques desse semestre vão para:
+Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprender a manipular o processamento de dados em uma tela para o usuário final e fazer a parte de integração com backend. Além disso, o que antes eram conceitos que havia entendido superficialmente hoje já estão consolidados, principalmente a respeito de Java, por ser o segundo projeto com backend desenvolvido nessa linguagem. Os destaques desse semestre vão para:
 
 - Consolidação de conhecimentos em Java;
-- Introdução a desenvolvimento frontend (HTML e CSS);
-- Introdução ao desenvolvimento web (pelo framework Spring);
+- Introdução a desenvolvimento frontend (javascript, HTML e CSS);
+- Utilização de ORM (Object Relational Mapper);
 - Gitflow;
 - Cultura de testes.
 
@@ -458,16 +591,11 @@ Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprende
 
 # Projeto 4: 2º semestre 2023
 
-### Parceiro Acadêmico
-
-Para o quarto semestre tivemos como parceiro a empresa Jaia Software.
-
-![jaia](https://github.com/ludmila-chagas/bertoti/assets/81494654/8b364285-c6c6-45f9-be53-fa011cf8eff8)
+#### 4º Semestre do Curso | Parceiro Acadêmico: Jaia Software
 
 ### Visão do Projeto
 O desafio consiste em desenvolver um sistema abrangente para controlar anomalias identificadas em um Laudo de Inspeção Predial, com funcionalidades-chave como diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Esse sistema é crucial para melhorar a gestão e eficácia na correção de anomalias, promovendo a preservação do patrimônio e tomada de decisões informadas.
 
-Solução
 ---
 
 ### Principais tecnologias
@@ -493,44 +621,144 @@ Biblioteca JavaScript para fazer requisições HTTP em aplicações web, simplif
 ---
 
 ### Contribuições pessoais
-Segui com minha atuação no desenvolvimento, dessa vez me desafiando a atuar nas duas primeiras sprints apenas com tarefas de front-end. Por ter sido meu contato inicial de maneira mais profunda com essa parte de uma aplicação, tive diversos aprendizados e contato com várias tecnologias novas de uma forma como não havia visto antes. 
+Segui com minha atuação no desenvolvimento, dessa vez me desafiando a atuar nas duas primeiras sprints apenas com tarefas de front-end, tendo assim adquirido conhecimentos nas tecnologias Vue.js e Axios. Além disso, também repeti o contato com estilização de páginas, reforçando conceitos de HTML e CSS. Esse semestre também foi crucial para consolidação do aprendizado de Spring Boot adicionando utilização do JPA (Java Persistence API).
 
 <details>
 <summary>Tela de cadastro de departamento e itens de checklist</summary>
-Tendo sido meu primeiro contato com Vue.js, fiz a ligação das minhas funções com as rotas de requisição do back-end pelo axios e implementei as variáveis reativas para carregamento e visualização dos dados na tela. Fui responsável por todas as funcionalidades dela, sendo envio de dados para cadastro de um departamento em uma rota e de checklist em outra, por meio de um callback, bem como edição e exclusão das informações inseridas nos campos das variáveis reativas.
+<p>Tendo sido meu primeiro contato com Vue.js, fiz a ligação das minhas funções com as rotas de requisição do back-end pelo axios e implementei as variáveis reativas para carregamento e visualização dos dados na tela. Fui responsável por todas as funcionalidades dela, sendo envio de dados para cadastro de um departamento em uma rota e de checklist em outra, por meio de um callback, bem como edição e exclusão das informações inseridas nos campos das variáveis reativas.</p>
  
- ![image](https://github.com/ludmila-chagas/bertoti/assets/81494654/bc6a6ac8-0279-4201-8721-a0a3449e2ac1)
- ![axios](https://github.com/ludmila-chagas/bertoti/assets/81494654/ce999d31-9303-47f1-b7f2-36e1a3107f84)
+Trecho do código:
 
+```
+<div class="form-body">
+      <div class="input-group">
+        <div class="input-box">
+          <label for="id_nome">Nome do segmento</label>
+          <input
+            type="text"
+            class="input-nome-categoria"
+            id="id_nome"
+            v-model="nomeCategoria"
+            placeholder="Ex.: Elétrica"
+          />
+        </div>
+        <div class="input-box">
+          <label for="id_checklist">Item do checklist</label>
+          <input
+            type="text"
+            v-model="item"
+            class="input-itens"
+            id="id_checklist"
+            placeholder="Ex.: Pontos de energia"
+            @keydown.enter="inserirItem"
+          />
+        </div>
+        <div class="botao=inserir">
+          <button id="butCad" class="botao-inserir" @click="inserirItem">Inserir</button>
+        </div>
+      </div>
+
+      <div class="section-itens">
+        <div class="section-title-itens">
+          <h1>Itens cadastrados</h1>
+        </div>
+          <div class="itens" v-for="(itemCadastrado, index) in itens" :key="index">
+            <div class="column">{{ index + 1 }}: {{ itemCadastrado }}</div>
+            <input v-if="estadoEdicao === index" v-model="itens[index]" @blur="salvarEdicao(index)" @keydown.enter="salvarEdicao(index)" />
+              <svg xmlns="http://www.w3.org/2000/svg" id="btn-salvarEdicao" width="20" height="20" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16" @click="salvarEdicao(index)" v-if="estadoEdicao === index" style="margin-right: 10px;">
+```
 
 </details>
 
 
 <details>
 <summary>Tela de consulta de departamento</summary>
-O maior desafio dessa tela foi conseguir recuperar dados do back-end para display em um modal, que é aberto conforme interação do usuário. Esses dados além de serem visíveis, também são editáveis no mesmo campo, graças a funcionalidade do atributo Props do Vue.js.
+<p>O maior desafio dessa tela foi conseguir recuperar dados do back-end para display em um modal, que é aberto conforme interação do usuário. Esses dados além de serem visíveis, também são editáveis no mesmo campo, graças a funcionalidade do atributo Props do Vue.js.</p>
 
-![consulta-segmento](https://github.com/ludmila-chagas/bertoti/assets/81494654/74aa0ee8-1308-4f1c-9739-25f8f0d1fa3f)
+Trecho do código:
+
+```
+const nomeSegmento = ref('');
+const idSegmento = ref('');
+const checklistList = ref([]);
+const checklistNome = ref('');
+const checklistId = ref('');
+const token = localStorage.getItem('token')
+
+async function segmentoCaptura(id) {
+    idSegmento.value = id.toString();
+    try {
+        const response = await axios.get('http://localhost:8080/segmento/' + idSegmento.value,{
+            headers: {
+                'Authorization': `Bearer ${token}` 
+            }
+        });
+        const segmentoData = response.data;
+        console.log(segmentoData);
+        /*passe os valores do response para as ref*/
+        idSegmento.value = segmentoData.id.toString();
+        nomeSegmento.value = segmentoData.nome;
+        checklistNome.value = segmentoData.checklistList.checklistNome;
+        checklistId.value = segmentoData.checklistList.checklistId;
+        checklistList.value = segmentoData.checklistList;
+
+    } catch (error) {
+        console.error('Ocorreu um erro ao coletar do segmento:', error);
+    }
+};
+```
  
  
 </details>
 
 <details>
 <summary>Mapeamento de entidades JPA e implementação de CRUD</summary>
-Aqui voltei minha atenção ao back-end para conclusão do mapeamento das duas últimas entidades da aplicação. Além do mapeamento também fiz o relacionamento dessas entidades com outra classes.
+Aqui voltei minha atenção ao back-end para conclusão do mapeamento das duas últimas entidades da aplicação. Além do mapeamento também fiz o relacionamento dessas entidades com outra classes, além de garantir a funcionalidade completa das operações CRUD.
 
-![usuario](https://github.com/ludmila-chagas/bertoti/assets/81494654/cddf274b-7d76-452f-937c-3952d76c1cf3)
+Trecho do código:
+
+```
+@Entity
+@Table(name = "usuario")
+public class Usuario implements UserDetails {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "usuario_id")
+    private Long usuarioId;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "senha")
+    private String senha;
+
+    @Column(name = "acesso")
+    @Enumerated(EnumType.STRING)
+    private UserRole role;
+
+
+    @OneToOne(mappedBy = "usuario", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private PrestadorServico prestadorServico;
+
+    public Usuario(Long usuarioId, String email, String senha, UserRole role, PrestadorServico prestadorServico) {
+        this.usuarioId = usuarioId;
+        this.email = email;
+        this.senha = senha;
+        this.role = role;
+        this.prestadorServico = prestadorServico;
+    }
+```
 
 
 </details>
 
 ### Aprendizados Efetivos HS
-Meu principal aprendizado foi a parte de front-end, pela primeira experiência com foco total nessa etapa e também pela abordagem da tecnologia Vue.js feita na disciplina de Laboratório de Desen. de Banco de Dados IV. Porém, foi muito valioso revisitar meus conhecimentos de back-end no final do projeto, tendo sido uma ótima maneira de fixar o conteúdo. Gostaria de destacar como aprendizados:
+Meu principal aprendizado foi a parte de front-end, pela primeira experiência com foco total nessa etapa e também pela abordagem da tecnologia Vue.js feita na disciplina de Laboratório de Desenvolvimento de Banco de Dados IV. Porém, foi muito valioso revisitar meus conhecimentos de back-end no final do projeto, tendo sido uma ótima maneira de fixar e consolidar os conhecimentos do Spring Boot e aprender sobre JPA. Gostaria de destacar como aprendizados:
 
-- Consolidação de conhecimentos em JPA;
+- Consolidação de conhecimentos do Spring Boot;
+- Consolidação de conhecimentos do JPA;
 - Consolidação de conhecimento em front-end (Vue.js e Axios);
-- Introdução a estilização front-end (CSS).
-
-
-
+- Mais prática em estilização front-end (HTML e CSS).
 
