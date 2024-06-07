@@ -98,34 +98,6 @@ Nesse projeto atuei pela primeira vez como desenvolvedora e também como um pont
 Dentre as funcionalidades que desenvolvi, estão:
 
 <details>
-<summary>Dicas de estudos</summary>
-<p>Através de pesquisas fiz uma base de dados com dicas de estudo para popular nossa assistente, com a utilização do módulo sqlite3 para interagir com um banco de dados SQLite. O código se conecta ao banco de dados dicas_athena.db, cria um cursor para executar comandos SQL e contém comandos para criar uma tabela chamada "dicas" e inserir várias dicas de estudo nessa tabela. No final, o comando banco.commit() é usado para confirmar as alterações no banco de dados. Essas dicas posteriormente serviram para consulta pelo usuário da aplicação.</p>
-
-Trecho do código:
-
-```
-import sqlite3
-
-banco = sqlite3.connect('dicas_athena.db')
-
-cursor = banco.cursor()
-
-# CÓDIGO PARA CRIAÇÃO DA TABELA: cursor.execute("CREATE TABLE dicas (dicas text)")
-
-# CÓDIGO PADRÃO PARA INSERÇÃO DE DADOS NA TABELA: cursor.execute("INSERT INTO dicas VALUES ('')")
-
-#cursor.execute("INSERT INTO dicas VALUES ('Defina metas e depois, divida essas metas em elementos menores. Em vez de pensar em estudar 10 capítulos de uma vez, leia 2 por dia, por exemplo.')")
-#cursor.execute("INSERT INTO dicas VALUES ('Crie objetivos diários, semanais e mensais. É um jeito de acompanhar seu progresso e de ver o que ainda precisa de atenção extra.')")
-#cursor.execute("INSERT INTO dicas VALUES ('Escolha um bom lugar de estudos. Selecionar uma área desconfortável ou improvisada demais vai comprometer o seu desempenho. O ideal é escolher um lugar tranquilo, com boa iluminação e boa temperatura.')")
-#cursor.execute("INSERT INTO dicas VALUES ('Faça com que o espaço esteja sempre arrumado para não causar distrações. Após finalizar um dia de estudo, deixe o ambiente pronto para o seguinte. Assim, facilita manter a organização.')")
-#cursor.execute("INSERT INTO dicas VALUES ('Um modo de manter a sua motivação no alto é se recompensar por cumprir metas. Pode ser bem simples: um chocolate após o estudo de um capítulo ou um episódio da sua série favorita são boas recompensas.')")
-
-#banco.commit()
-```
-
-</details>
-
-<details>
 <summary>Cadastro de disciplinas e metas de estudo</summary>
 <p>Desenvolvi uma lógica interativa para cadastro de matérias de estudo, definição de metas de estudo (semanal, quinzenal ou mensal) e registro de horas estudadas por matéria. O programa utiliza loops while para permitir ao usuário cadastrar múltiplas matérias, definir metas e adicionar horas estudadas. Os dados são armazenados em uma lista e escritos em um arquivo de texto. Além disso, via comando SQL os dados também são inseridos em uma tabela do banco de dados.</p>
 
@@ -189,6 +161,64 @@ with open("novo_dado.txt", "a+", encoding='utf-8') as arquivo:
         arquivo.write(f"Matéria: {materia[pos]} - Tempo/Meta = {tempo_estudado[pos]} - Hora estudada {hora_estudada[pos]}\n" )
         vsql = "INSERT INTO Metas (MATERIA,META,HORA_ESTUDADA)VALUES('"+materia[pos]+"','"+tempo_estudado[pos]+"','"+hora_estudada[pos]+"')"
         inserir(vcon, vsql)
+```
+
+</details>
+
+<details>
+<summary>Conexão com banco de dados SQLite</summary>
+<p>Utilizando o módulo **sqlite3** estabeleci uma conexão com um banco de dados SQLite. O código define uma função para criar essa conexão e lida com possíveis erros. Após estabelecida a conexão, uma função é definida para inserir registros no banco de dados, criando um cursor para executaros comandos SQL fornecidos e confirmando as mudanças com o comando *conexão.commit()*. </p>
+
+Trecho do código:
+
+```
+import sqlite3
+from sqlite3 import Error
+def conexaobanco():
+    caminho ="C:\\Users\\Famil\\OneDrive\\Área de Trabalho\\Fatec - 1 semestre\\banquinho\\Banco_Athena.db"
+    con = None
+    try:
+        con = sqlite3.connect(caminho)
+    except Error as ex:
+        print(ex)
+    return con
+
+vcon = conexaobanco()
+def inserir(conexao,sql):                 
+    try:
+        c = conexao.cursor()
+        c.execute(sql)
+        conexao.commit()  
+        print('registro inserido')
+    except Error as ex:
+        print(ex)
+```
+</details>
+
+<details>
+<summary>Dicas de estudos</summary>
+<p>Através de pesquisas fiz uma base de dados com dicas de estudo para popular nossa assistente, com a utilização do já citado módulo sqlite3 para interagir com um banco de dados SQLite. O código se conecta ao banco de dados dicas_athena.db, cria um cursor para executar comandos SQL e contém comandos para criar uma tabela chamada "dicas" e inserir várias dicas de estudo nessa tabela. No final, o comando banco.commit() é usado para confirmar as alterações no banco de dados. Essas dicas posteriormente serviram para consulta pelo usuário da aplicação.</p>
+
+Trecho do código:
+
+```
+import sqlite3
+
+banco = sqlite3.connect('dicas_athena.db')
+
+cursor = banco.cursor()
+
+# CÓDIGO PARA CRIAÇÃO DA TABELA: cursor.execute("CREATE TABLE dicas (dicas text)")
+
+# CÓDIGO PADRÃO PARA INSERÇÃO DE DADOS NA TABELA: cursor.execute("INSERT INTO dicas VALUES ('')")
+
+#cursor.execute("INSERT INTO dicas VALUES ('Defina metas e depois, divida essas metas em elementos menores. Em vez de pensar em estudar 10 capítulos de uma vez, leia 2 por dia, por exemplo.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Crie objetivos diários, semanais e mensais. É um jeito de acompanhar seu progresso e de ver o que ainda precisa de atenção extra.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Escolha um bom lugar de estudos. Selecionar uma área desconfortável ou improvisada demais vai comprometer o seu desempenho. O ideal é escolher um lugar tranquilo, com boa iluminação e boa temperatura.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Faça com que o espaço esteja sempre arrumado para não causar distrações. Após finalizar um dia de estudo, deixe o ambiente pronto para o seguinte. Assim, facilita manter a organização.')")
+#cursor.execute("INSERT INTO dicas VALUES ('Um modo de manter a sua motivação no alto é se recompensar por cumprir metas. Pode ser bem simples: um chocolate após o estudo de um capítulo ou um episódio da sua série favorita são boas recompensas.')")
+
+#banco.commit()
 ```
 
 </details>
