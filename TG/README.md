@@ -167,7 +167,7 @@ with open("novo_dado.txt", "a+", encoding='utf-8') as arquivo:
 
 <details>
 <summary>Conexão com banco de dados SQLite</summary>
-<p>Utilizando o módulo **sqlite3** estabeleci uma conexão com um banco de dados SQLite. O código define uma função para criar essa conexão e lida com possíveis erros. Após estabelecida a conexão, uma função é definida para inserir registros no banco de dados, criando um cursor para executaros comandos SQL fornecidos e confirmando as mudanças com o comando *conexão.commit()*. </p>
+<p>Utilizando o módulo <b>sqlite3</b> estabeleci uma conexão com um banco de dados SQLite. O código define uma função para criar essa conexão e lida com possíveis erros. Após estabelecida a conexão, uma função é definida para inserir registros no banco de dados, criando um cursor para executaros comandos SQL fornecidos e confirmando as mudanças com o comando *conexão.commit()*. </p>
 
 Trecho do código:
 
@@ -245,7 +245,7 @@ Já em relação as soft skills posso destacar:
 
 ------
 ------
-# Projeto 2: 2º semestre 2021
+# [Projeto 2: 2º semestre 2021](https://github.com/PhatomFatec/PI_Necto_Systems)
 
 #### 2º Semestre do Curso | Parceiro Acadêmico: Necto Systems
 
@@ -273,14 +273,49 @@ Banco de dados relacional altamente confiável e flexível, que conta com recurs
 ### Contribuições pessoais
 Novamente atuando como desenvolvedora, por esse projeto tive meu primeiro contato com conexão com banco de dados relacional, e foi nele que aprendi como configurar essa conexão e também consultas úteis para se fazer, bem como criar funções em Java e utilizar programação orientada a objetos.
 
-
 <details>
-<summary>Conexão com banco de dados e consultas no </summary>
-<p>No código, foram criados dois métodos em Java para recuperar consultas com base em tempos de execução. O método gettopQuickQuery() retorna as consultas com menor tempo de execução lendo o número de consultas de um arquivo queries.txt, enquanto getTopSlowestQueries() retorna as consultas com maior tempo de execução. Ambos os métodos usam um HashMap para armazenar os resultados e lidam com erros durante a execução das consultas SQL. Esses métodos visam monitorar e otimizar o desempenho do banco de dados.</p>
+<summary>Conexão com banco de dados PostgreSQL</summary>
+<p>Utilizando o módulo <b>org.postgresql.Driver</b>, estabeleci uma conexão com um banco de dados PostgreSQL, lidando pela primeira vez com a utilização de um banco robusto na aplicação. O código define uma classe que gerencia a conexão, permitindo que o usuário forneça a URL do banco, nome de usuário e senha. A conexão é criada no construtor da classe e lida com possíveis erros de conexão. Além disso, um método é definido para fechar a conexão de forma segura quando não for mais necessária, garantindo a liberação dos recursos utilizados.</p>
  
 Trecho do código:
 
-´´´
+	public class conexao {
+
+	private Connection con;
+
+	static Scanner sc = new Scanner(System.in);
+
+	private static String url = sc.next();
+   	private static String user = sc.next();
+    	private static String pass = sc.next();
+
+	public conexao(String databaseName) {
+
+		try {
+			Class.forName("org.postgresql.Driver");
+			con = DriverManager.getConnection(url + databaseName, user, pass);
+		} catch (Exception e) {
+			throw new Error("Houve um problema ao conectar no banco de dados!");
+		}
+	}
+
+	private void closeConnection() {
+		try {
+			if (!this.con.isClosed()) {
+				this.con.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+</details>
+
+<details>
+<summary>Consulta de queries mais rápidas e mais lentas do banco de dados</summary>
+<p>No código, foram criados dois métodos em Java para recuperar consultas com base em tempos de execução. O método gettopQuickQuery() retorna as consultas com menor tempo de execução lendo o número de consultas de um arquivo queries.txt, enquanto getTopSlowestQueries() retorna as consultas com maior tempo de execução. Ambos os métodos usam um HashMap para armazenar os resultados e lidam com erros durante a execução das consultas SQL. Esses métodos visam monitorar e otimizar o desempenho do banco de dados.</p>
+ 
+Trecho do código:
 
 	private HashMap<String, String> gettopQuickQuery() {
 		HashMap<String, String> response = new HashMap<>();
@@ -361,7 +396,37 @@ Trecho do código:
 
 		return response;
 	}
-´´´
+
+</details>
+
+<details>
+<summary>Consulta de status de conexões no banco de dados</summary>
+<p>Defini um método para consultar o status das conexões no banco de dados PostgreSQL. O código executa uma consulta SQL que busca o nome do banco de dados (datname) e o estado (state) das conexões ativas na tabela pg_stat_activity. Essas informações são armazenadas em um HashMap (uma estrutura que armazena dados em pares de chave e valor) para fácil acesso. Se ocorrer algum problema durante a consulta, uma mensagem de erro é exibida, juntamente com detalhes técnicos para ajudar na resolução do problema.</p>
+ 
+Trecho do código:
+
+
+	private HashMap<String, String> getQueryConnection() {
+			HashMap<String, String> response = new HashMap<>();
+
+		try {
+			String sql = "SELECT datname, state from pg_stat_activity WHERE datname is not null;";
+
+			PreparedStatement pesquisa = con.prepareStatement(sql);
+
+			ResultSet result = pesquisa.executeQuery();
+
+			while(result.next()) {
+				response.put(result.getString("datname"), result.getString("state"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Houve um problema ao requisitar status geral do backend");
+		}
+
+		return response;
+	}
+
 
 </details>
 
