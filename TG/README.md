@@ -52,6 +52,15 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 - [Aprendizados Efetivos HS]
 </details>
 
+<details>
+<summary>Projeto 5: 5º semestre 2021</summary>
+
+- [Início Projeto 2](#projeto-5-1º-semestre-2021)
+- [Visão do Projeto](#visão-do-projeto-1)
+- [Principais tecnologias](#principais-tecnologias-1)
+- [Contribuições pessoais](#contribuições-pessoais-1)
+- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
+</details>
 ---
 
 # [Projeto 1: 1º semestre 2021](https://github.com/silvercod3/Athena)
@@ -68,10 +77,10 @@ O propósito do projeto foi trazer para os estudantes em geral uma forma mais ce
 
 ### Principais tecnologias
 
-- Python
-- SQLite
-- SpeechRecognition
-- PyAudio
+- Python (back-end)
+- SQLite (banco de dados)
+- SpeechRecognition (back-end)
+- PyAudio (back-end)
 
 #### Python
 
@@ -257,8 +266,8 @@ Desenvolver uma solução para monitoramento de um ou mais SGBDs (Sistema Gerenc
 
 ### Principais tecnologias
 
-- Java
-- PostgreSQL
+- Java (banck-end)
+- PostgreSQL (banco de dados)
 
 #### Java
 
@@ -449,7 +458,7 @@ Como foi o primeiro projeto da faculdade onde nos relacionamos diretamente com o
 -----
 -----
 
-# Projeto 3: 1º semestre 2023
+# [Projeto 3: 1º semestre 2023](https://github.com/Thunder53/Dom-Rock/tree/main)
 
 #### 3º Semestre do Curso | Parceiro Acadêmico: Dom Rock
 
@@ -461,15 +470,15 @@ A solução proposta consiste em lidar com o histórico de movimentação de pro
 
 ### Principais tecnologias
 
-- Java
-- Spring
-- PostgreSQL
-- HTML
-- CSS
-- Javascript
+- Java (back-end)
+- Spring Boot (back-end)
+- PostgreSQL (banco de dados)
+- HTML (front-end)
+- CSS (front-end)
+- Javascript (front-end)
 
-#### Spring
-Framework de desenvolvimento de aplicativos Java que fornece um ambiente robusto para a criação de aplicativos empresariais escaláveis e de alta qualidade. Com recursos como injeção de dependência e controle transacional, o Spring facilita o desenvolvimento, a manutenção e a integração de sistemas complexos, permitindo que os desenvolvedores se concentrem na lógica de negócios.
+#### Spring Boot
+Framework de desenvolvimento de aplicativos Java que fornece um ambiente robusto para a criação de aplicativos empresariais escaláveis e de alta qualidade. Com recursos como injeção de dependência e controle transacional, o Spring facilita o desenvolvimento, a manutenção e a integração de sistemas complexos, permitindo que os desenvolvedores se concentrem na lógica de negócios. Além disso, o Spring Boot simplifica a criação de arquiteturas de servidor REST, oferecendo uma configuração mínima e um conjunto de ferramentas poderosas para desenvolver APIs RESTful rapidamente, garantindo uma integração eficiente e uma escalabilidade sólida.
 
 #### HTML
 Linguagem de marcação padrão para a criação de páginas da web. Utilizando tags e elementos, o HTML permite estruturar e organizar o conteúdo de uma página, incluindo textos, imagens, links e outros elementos interativos. É a base fundamental para a construção de sites e aplicativos web, fornecendo a estrutura básica e semântica para apresentar informações na internet.
@@ -684,7 +693,7 @@ Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprende
 ---
 ---
 
-# Projeto 4: 2º semestre 2023
+# [Projeto 4: 2º semestre 2023](https://github.com/B1nary-Devs/JAIA-SOFTWARE)
 
 #### 4º Semestre do Curso | Parceiro Acadêmico: Jaia Software
 
@@ -695,14 +704,14 @@ O desafio consiste em desenvolver um sistema abrangente para controlar anomalias
 
 ### Principais tecnologias
 
-- Java
-- Spring Boot
-- Javascript
-- Oracle Cloud
-- HTML
-- Vue.js
-- Axios
-- CSS
+- Java (back-end)
+- Spring Boot (back-end)
+- Oracle Cloud (banco de dados)
+- Javascript (front-end)
+- HTML (front-end)
+- Vue.js (front-end)
+- Axios (front-end)
+- CSS (front-end)
 
 #### Oracle Cloud
 Plataforma de nuvem da Oracle para hospedagem e gerenciamento eficiente de aplicativos, oferecendo serviços abrangentes, como armazenamento escalável e soluções de banco de dados gerenciadas. Ideal para ambientes computacionais flexíveis, abrangendo desde nuvem pública até opções privadas e híbridas.
@@ -856,4 +865,151 @@ Meu principal aprendizado foi a parte de front-end, pela primeira experiência c
 - Consolidação de conhecimentos do JPA;
 - Consolidação de conhecimento em front-end (Vue.js e Axios);
 - Mais prática em estilização front-end (HTML e CSS).
+
+-----
+-----
+
+# [Projeto 5: 1º semestre 2024](https://github.com/GroupHextech/HEXTECH-API6sem)
+
+#### 6º Semestre do Curso | Parceiro Acadêmico: Imagem
+
+---
+
+### Visão do Projeto
+
+Esse projeto tem como visão desenvolver uma plataforma inovadora que utiliza inteligência artificial para analisar comentários online pelo sentimento expressado, classificando-os como positivos, neutros ou negativos. Essa análise será integrada a um dashboard junto com outras informações sobre esses clientes que comentaram, permitindo extrair insights valiosos para orientar a tomada de decisões estratégicas com base na satisfação do cliente.
+
+---
+
+### Principais tecnologias
+
+- React (front-end)
+- Python (back-end)
+- Flask (back-end)
+- Jupyter Notebook (machine learning)
+- XGBoost (machine learning)
+- Mongo DB (banco de dados)
+- Firebase (banco de dados)
+  
+
+#### React
+Biblioteca JavaScript amplamente utilizada para a criação de interfaces de usuário interativas e dinâmicas. Com sua abordagem baseada em componentes reutilizáveis, React permite o desenvolvimento de interfaces complexas de forma eficiente e organizada. Sua popularidade se deve à sua capacidade de criar interfaces responsivas e de alto desempenho.
+
+#### Flask
+Flask é um framework web leve e flexível para Python, adequado para o desenvolvimento de pequenas a grandes aplicações web. Sua simplicidade de uso e sua extensibilidade fazem do Flask uma escolha popular entre os desenvolvedores que buscam uma solução rápida e eficiente para a construção de APIs e aplicações web.
+
+#### Jupyter Notebook
+Aplicação web que permite criar e compartilhar documentos interativos que contenham código, visualizações e texto explicativo. Amplamente utilizado na área de machine learning, o Jupyter Notebook facilita a exploração de dados, o desenvolvimento de modelos e a comunicação dos resultados, tornando o processo de desenvolvimento mais ágil e colaborativo.
+
+#### XGBoost
+Biblioteca otimizada de machine learning que oferece implementações eficientes de algoritmos de boosting de árvore. Conhecido por sua rapidez e desempenho superior, o XGBoost é amplamente utilizado em competições de machine learning e em aplicações onde a precisão e a velocidade são essenciais.
+
+#### MongoDB
+Banco de dados NoSQL (não relacional) orientado a documentos, projetado para armazenar, recuperar e gerenciar informações de forma flexível e escalável. Sua estrutura de dados baseada em documentos JSON permite uma integração fácil com aplicações web e uma modelagem de dados mais dinâmica em comparação com bancos de dados relacionais tradicionais.
+
+#### Firebase
+Plataforma de desenvolvimento de aplicativos móveis e web que oferece uma variedade de serviços, incluindo um banco de dados em tempo real. Com o Firebase, os desenvolvedores podem criar aplicativos escaláveis e de alta qualidade, com recursos como autenticação de usuários, análise de dados e hospedagem de arquivos.
+
+---
+
+### Contribuições pessoais
+
+Tendo maior experiência em inteligência artificial por já ter tido uma experiência profissional nesta área, tive como foco de atuação as tarefas relacionadas ao <i>Machine Learning</i> (aprendizado de máquina), que é o trabalho de ensinar o computador a aprender com os dados para executar alguma ação, no nosso caso, analisar os sentimento dos comentários.
+Com atuação quero dizer que participei de diversas etapas nessa parte do nosso desafio, como a escolha da base de dados, o estudo e escolha dos algoritmos para treinar o modelo, o treinamento do modelo e melhorias na performance dele.
+
+Dentre meu trabalho realizado, posso destacar:
+
+<details>
+<summary>Treinamento do primeiro modelo: algoritmo Naive Bayes</summary>
+<p>Implementei nosso primeiro modelo com o algoritmo Naive Bayes, que encontrei através de pesquisas, conhecido por ser simplificado e otimizado, fornecendo um treinamento super rápido e com resultados satisfatórios. Devido sua leveza e simplicidade, foi uma ótima escolha para nossa entrega da primeira sprint.</p>
+
+Trecho do código:
+
+```
+# Carrega o conjunto de dados
+dataset = pd.read_csv("C:\\fatec\\B2W-Reviews01\\B2W-Reviews01.csv")
+
+# Mostra o tamanho do dataset original
+print("Tamanho do dataset original:", dataset.shape[0], "\n")
+
+# Remove linhas com valores em branco
+dataset = dataset.dropna(subset=['review_text', 'overall_rating'])
+
+# Mostra o tamanho do dataset alterado
+print("Tamanho do dataset alterado:", dataset.shape[0], "\n")
+
+# Cria uma nova coluna para classificar entre comentários positivos, negativos ou neutros com base na nota:
+dataset['feeling'] = np.where(dataset['overall_rating'] < 3, 'Negative', np.where(dataset['overall_rating'] == 3, 'Neutral', 'Positive'))
+
+# Mostra os primeiros registros do dataset
+print("Primeiros registros do dataset:")
+print(tabulate(dataset.head(20), headers='keys', tablefmt='pipe'))
+
+# Separar os dados em features (X) e target (Y)
+X = dataset['review_text'].values
+Y = dataset['feeling'].values
+
+# Criar um objeto CountVectorizer com N-grams
+ngram_vectorizer = CountVectorizer(ngram_range=(1, 3))  # Considera unigramas, bigramas e trigramas
+
+# Vetorizar os dados de texto com N-grams
+X_ngrams = ngram_vectorizer.fit_transform(X)
+
+# Dividir os dados em conjunto de treinamento e teste
+X_train, X_test, Y_train, Y_test = train_test_split(X_ngrams, Y, test_size=0.2, random_state=42)
+
+# Criar e treinar o modelo Naive Bayes com os dados vetorizados com N-grams
+model_ngrams = MultinomialNB()
+model_ngrams.fit(X_train, Y_train)
+
+# Avaliar o modelo com N-grams
+accuracy_ngrams = model_ngrams.score(X_test, Y_test)
+print("Acurácia:", accuracy_ngrams)
+
+# Prever as classes para os dados de teste
+Y_pred = model_ngrams.predict(X_test)
+
+# Criar um DataFrame com as previsões e as verdadeiras classes de "feeling"
+df_results = pd.DataFrame({'Feeling_Predicted': Y_pred, 'Feeling_True': Y_test})
+
+# Mostrar os resultados
+print("\nResultados de 'feeling' após o treinamento do modelo:")
+print(df_results.head(20))  # Exibir os 20 primeiros registros
+
+# Salvar o modelo e o vetorizador em um único arquivo, no mesmo diretório deste notebook
+dump((model_ngrams, ngram_vectorizer), 'modelo_naive_bayes.joblib')
+
+```
+
+</details>
+
+<details>
+<summary>Melhoria na performance através do balanceamento de classes</summary>
+<p></p>
+
+Trecho do código:
+
+```
+
+
+```
+</details>
+
+<details>
+<summary></summary>
+<p></p>
+
+Trecho do código:
+
+```
+
+
+```
+
+</details>
+ 
+ ### Aprendizados Efetivos em Hard Skills
+
+
+### Aprendizados Efetivos em Soft Skills
 
