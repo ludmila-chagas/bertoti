@@ -921,7 +921,7 @@ Com atuação quero dizer que participei de diversas etapas nessa parte do nosso
 Dentre meu trabalho realizado, posso destacar:
 
 <details>
-<summary>Treinamento do primeiro modelo: algoritmo Naive Bayes</summary>
+<summary>Estudo, implementação e treinamento do primeiro modelo: algoritmo Naive Bayes</summary>
 <p>Implementei nosso primeiro modelo com o algoritmo Naive Bayes, que encontrei através de pesquisas, conhecido por ser simplificado e otimizado, fornecendo um treinamento super rápido e com resultados satisfatórios. Devido sua leveza e simplicidade, foi uma ótima escolha para nossa entrega da primeira sprint.</p>
 
 Trecho do código:
@@ -985,7 +985,7 @@ dump((model_ngrams, ngram_vectorizer), 'modelo_naive_bayes.joblib')
 </details>
 
 <details>
-<summary>Melhoria na performance através do balanceamento de classes</summary>
+<summary>Melhoria na performance através do balanceamento de classes (Data Augmentation)</summary>
 <p></p>
 
 Trecho do código:
@@ -997,7 +997,7 @@ Trecho do código:
 </details>
 
 <details>
-<summary></summary>
+<summary>Teste de modelos mais robustos: CatBoost e XGBoost</summary>
 <p></p>
 
 Trecho do código:
