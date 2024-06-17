@@ -205,8 +205,8 @@ def inserir(conexao,sql):
 </details>
 
 <details>
-<summary>Dicas de estudos</summary>
-<p>Através de pesquisas fiz uma base de dados com dicas de estudo para popular nossa assistente, com a utilização do já citado módulo sqlite3 para interagir com um banco de dados SQLite. O código se conecta ao banco de dados dicas_athena.db, cria um cursor para executar comandos SQL e contém comandos para criar uma tabela chamada "dicas" e inserir várias dicas de estudo nessa tabela. No final, o comando banco.commit() é usado para confirmar as alterações no banco de dados. Essas dicas posteriormente serviram para consulta pelo usuário da aplicação.</p>
+<summary>População do banco de dados com dicas de estudos</summary>
+<p>Através de pesquisas fiz uma base de dados com dicas de estudo para popular o banco de dados da nossa assistente, com a utilização do já citado módulo sqlite3 para interagir com um banco de dados SQLite. O código se conecta ao banco de dados dicas_athena.db, cria um cursor para executar comandos SQL e contém comandos para criar uma tabela chamada "dicas" e inserir várias dicas de estudo nessa tabela. No final, o comando banco.commit() é usado para confirmar as alterações no banco de dados. Essas dicas posteriormente serviram para consulta pelo usuário da aplicação.</p>
 
 Trecho do código:
 
