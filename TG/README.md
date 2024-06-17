@@ -61,6 +61,7 @@ Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C
 - [Contribuições pessoais](#contribuições-pessoais-1)
 - [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
 </details>
+
 ---
 
 # [Projeto 1: 1º semestre 2021](https://github.com/silvercod3/Athena)
