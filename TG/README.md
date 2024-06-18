@@ -996,18 +996,6 @@ Trecho do código:
 ```
 </details>
 
-<details>
-<summary>Teste de modelos mais robustos: CatBoost e XGBoost</summary>
-<p></p>
-
-Trecho do código:
-
-```
-
-
-```
-
-</details>
  
  ### Aprendizados Efetivos em Hard Skills
 
