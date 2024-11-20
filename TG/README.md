@@ -4,11 +4,11 @@
 
 Olá, seja bem-vindo! Meu nome é Ludmila Mariana Chagas e sou estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
 
-![Untitled](https://github.com/ludmila-chagas/bertoti/assets/81494654/a054d5f3-2b54-437a-82d8-93f470587cf0)
+<img src="https://github.com/user-attachments/assets/b81508ba-eb50-4cb5-98d6-336e7b40d582" alt="Imagem do WhatsApp" width="300">
 
 ## Principais conhecimentos
 
-Comecei a programar em um curso de técnico, sendo minha linguagem ingressante C++. Lá aprendi o básico de lógica de programação, porém foi na Fatec que desenvolvi com profundidade meus conhecimentos em Programação Orientada a Objetos e principalmente em Java, sendo hoje minha principal linguagem utilizada. Meu foco está no desenvolvimento backend, com implementações de webservices especialmente pelo framework Springboot.
+Tive o primeir contato com programção em um curso de técnico, sendo minha linguagem ingressante C++. Lá aprendi o básico de lógica de programação, porém foi na Fatec que desenvolvi com profundidade meus conhecimentos em Programação Orientada a Objetos e principalmente em Java, sendo hoje minha principal linguagem utilizada. Meu foco está no desenvolvimento backend, com implementações de webservices especialmente pelo framework Springboot.
 
 # Índice
  
@@ -986,13 +986,27 @@ dump((model_ngrams, ngram_vectorizer), 'modelo_naive_bayes.joblib')
 
 <details>
 <summary>Melhoria na performance através do balanceamento de classes (Data Augmentation)</summary>
-<p></p>
+<p>Em busca de obter melhoria nos resultados, foi realizado o balanceamento de classes (que é importante para o modelo aprender a classificar corretamente todas as classes) com a técnica chamada de Data Augmentation, aumentando a quantidade de dados de treinamento disponíveis, criando novas amostras a partir das existentes, para a classe que tenha uma menor representação. Isso foi feito com a biblioteca nlpaug, em específico, o método SynonymAug, para realizar a substituição de palavras por sinônimos, com o objetivo de gerar variações nos comentários neutros.</p>
 
 Trecho do código:
 
 ```
+# Filtra os comentários neutros
+neutral_comments = dataset.loc[dataset['feeling'] == 1]
 
+# Aumenta os dados (comentários da classe 'Neutro')
+synonym_aug = naw.SynonymAug(aug_src='wordnet')
+augmented_comments = []
 
+for comment in neutral_comments['review_text']:
+    for _ in range(3):  # Gera 3 variações para cada comentário neutro
+        augmented_comment = synonym_aug.augment(comment)
+        new_row = {'review_text': augmented_comment, 'overall_rating': 3, 'feeling': 1}
+        augmented_comments.append(new_row)
+
+# Adiciona os comentários aumentados ao dataset combinado
+augmented_comments_df = pd.DataFrame(augmented_comments)
+dataset = pd.concat([dataset, augmented_comments_df], ignore_index=True)
 ```
 </details>
 
