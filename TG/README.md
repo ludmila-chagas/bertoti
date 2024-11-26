@@ -2,13 +2,16 @@
 
 ## Introdução
 
-Olá, seja bem-vindo! Meu nome é Ludmila Mariana Chagas e sou estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
+<p align="center">Olá, seja bem-vindo! </p>
 
-<img src="https://github.com/user-attachments/assets/b81508ba-eb50-4cb5-98d6-336e7b40d582" alt="Imagem do WhatsApp" width="300">
+Meu nome é Ludmila Mariana Chagas e sou estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/b81508ba-eb50-4cb5-98d6-336e7b40d582" alt="Imagem do WhatsApp" width="300"></p>
+
 
 ## Principais conhecimentos
 
-Tive o primeir contato com programção em um curso de técnico, sendo minha linguagem ingressante C++. Lá aprendi o básico de lógica de programação, porém foi na Fatec que desenvolvi com profundidade meus conhecimentos em Programação Orientada a Objetos e principalmente em Java, sendo hoje minha principal linguagem utilizada. Meu foco está no desenvolvimento backend, com implementações de webservices especialmente pelo framework Springboot.
+Tive o primeiro contato com programção em um curso de técnico, sendo minha linguagem ingressante C++. Lá aprendi o básico de lógica de programação, porém foi na Fatec que desenvolvi com profundidade meus conhecimentos em Programação Orientada a Objetos e principalmente em Java, sendo hoje minha principal linguagem utilizada. Meu foco está no desenvolvimento backend, com implementações de webservices especialmente pelo framework Springboot.
 
 # Índice
  
@@ -53,7 +56,17 @@ Tive o primeir contato com programção em um curso de técnico, sendo minha lin
 </details>
 
 <details>
-<summary>Projeto 5: 5º semestre 2021</summary>
+<summary>Projeto 5: 6º semestre 2021</summary>
+
+- [Início Projeto 2](#projeto-5-1º-semestre-2021)
+- [Visão do Projeto](#visão-do-projeto-1)
+- [Principais tecnologias](#principais-tecnologias-1)
+- [Contribuições pessoais](#contribuições-pessoais-1)
+- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
+</details>
+
+<details>
+<summary>Projeto 6: 5º semestre 2021</summary>
 
 - [Início Projeto 2](#projeto-5-1º-semestre-2021)
 - [Visão do Projeto](#visão-do-projeto-1)
@@ -1030,10 +1043,13 @@ xgboost.fit(X_train, Y_train, sample_weight=class_weights)
 
 </details>
  
- ### Aprendizados Efetivos em Hard Skills
+### Aprendizados Efetivos em Hard Skills
+Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipulação de dados. A implementação e treinamento de modelos, como Naive Bayes e XGBoost, permitiram consolidar práticas como vetorização de texto, balanceamento de classes e técnicas de data augmentation. Além disso, reforcei minha experiência em Python e explorei ferramentas como a biblioteca nlpaug para enriquecer a base de dados, aprimorando a capacidade do modelo de lidar com desbalanceamento. Foi uma oportunidade significativa para consolidar conceitos de inteligência artificial e desenvolver soluções práticas com impacto direto na qualidade dos resultados. Alguns dos destaques foram:
 
-
-### Aprendizados Efetivos em Soft Skills
+* Machine Learning;
+* Manipulação de Dados;
+* Data Augmentation;
+* Consolidação de conhecimentos em Python.
 
 -----
 -----
