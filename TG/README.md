@@ -929,7 +929,7 @@ Plataforma de desenvolvimento de aplicativos móveis e web que oferece uma varie
 
 ### Contribuições pessoais
 
-Tendo maior experiência em inteligência artificial por já ter tido uma experiência profissional nesta área, tive como foco de atuação as tarefas relacionadas ao <i>Machine Learning</i> (aprendizado de máquina), que é o trabalho de ensinar o computador a aprender com os dados para executar alguma ação, no nosso caso, analisar os sentimento dos comentários.
+Tendo um pouco de conhecimento em inteligência artificial por já ter tido uma experiência profissional nesta área, tive como foco de atuação as tarefas relacionadas ao <i>Machine Learning</i> (aprendizado de máquina), que é o trabalho de ensinar o computador a aprender com os dados para executar alguma ação, no nosso caso, analisar os sentimento dos comentários.
 Com atuação quero dizer que participei de diversas etapas nessa parte do nosso desafio, como a escolha da base de dados, o estudo e escolha dos algoritmos para treinar o modelo, o treinamento do modelo e melhorias na performance dele.
 
 Dentre meu trabalho realizado, posso destacar:
@@ -1062,8 +1062,7 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 ---
 
 ### Visão do Projeto
-
-
+O projeto tem como objetivo melhorar a eficiência do processo de recrutamento e seleção da Pro4tech, centralizando dados fragmentados para otimizar a coleta, visualização e análise das informações. Isso permitirá uma tomada de decisão mais estratégica, alinhando as estratégias de contratação aos objetivos organizacionais e melhorando a alocação de recursos.
 
 ---
 
@@ -1072,10 +1071,12 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 - React Native (front-end)
 - Go (back-end)
 - Python (back-end)
-  
 
-#### React
+#### React Native
+Framework de desenvolvimento de aplicativos móveis, que permite a criação de aplicativos para iOS e Android utilizando JavaScript e React. Com a capacidade de compartilhar grande parte do código entre as plataformas, React Native oferece um desenvolvimento mais rápido e eficiente, mantendo a performance nativa dos dispositivos móveis.
 
+#### Go
+Também conhecido como Golang, é uma linguagem de programação desenvolvida pelo Google, conhecida por sua simplicidade, desempenho e escalabilidade. É amplamente utilizada para o desenvolvimento de back-end, especialmente em sistemas que exigem alta concorrência e performance, como servidores web e APIs de grande escala. Sua sintaxe simples e a eficiente gestão de concorrência tornam o Go uma escolha popular para projetos modernos de infraestrutura e microserviços.
 
 ---
 
