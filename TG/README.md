@@ -1035,3 +1035,78 @@ xgboost.fit(X_train, Y_train, sample_weight=class_weights)
 
 ### Aprendizados Efetivos em Soft Skills
 
+-----
+-----
+
+# [Projeto 6: 2º semestre 2024](https://github.com/projetoKhali/api5)
+
+#### 5º Semestre do Curso | Parceiro Acadêmico: Pro4tech
+
+---
+
+### Visão do Projeto
+
+
+
+---
+
+### Principais tecnologias
+
+- React Native (front-end)
+- Go (back-end)
+- Python (back-end)
+  
+
+#### React
+
+
+---
+
+### Contribuições pessoais
+
+a
+
+Dentre meu trabalho realizado, posso destacar:
+
+<details>
+<summary>AA</summary>
+<p>A</p>
+
+Trecho do código:
+
+```
+
+```
+
+</details>
+
+<details>
+<summary>A</summary>
+<p>A</p>
+
+Trecho do código:
+
+```
+
+```
+</details>
+
+<details>
+<summary>A</summary>
+<p></p>
+
+Trecho do código:
+
+```
+
+
+```
+
+</details>
+ 
+ ### Aprendizados Efetivos em Hard Skills
+
+
+### Aprendizados Efetivos em Soft Skills
+
+
