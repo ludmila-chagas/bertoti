@@ -986,7 +986,7 @@ dump((model_ngrams, ngram_vectorizer), 'modelo_naive_bayes.joblib')
 
 <details>
 <summary>Melhoria na performance através do balanceamento de classes (Data Augmentation)</summary>
-<p>Em busca de obter melhoria nos resultados, foi realizado o balanceamento de classes (que é importante para o modelo aprender a classificar corretamente todas as classes) com a técnica chamada de Data Augmentation, aumentando a quantidade de dados de treinamento disponíveis, criando novas amostras a partir das existentes, para a classe que tenha uma menor representação. Isso foi feito com a biblioteca nlpaug, em específico, o método SynonymAug, para realizar a substituição de palavras por sinônimos, com o objetivo de gerar variações nos comentários neutros.</p>
+<p>Em busca de obter melhoria nos resultados, foi realizado o balanceamento de classes (que é importante para o modelo aprender a classificar corretamente todas as classes) com a técnica chamada de Data Augmentation, aumentando a quantidade de dados de treinamento disponíveis, criando novas amostras a partir das existentes, para a classe com menor representação. Isso foi feito com a biblioteca nlpaug, em específico, o método SynonymAug, para realizar a substituição de palavras por sinônimos, com o objetivo de gerar variações nos comentários neutros.</p>
 
 Trecho do código:
 
@@ -1012,7 +1012,7 @@ dataset = pd.concat([dataset, augmented_comments_df], ignore_index=True)
 
 <details>
 <summary>Ajustes de peso da classe Neutro</summary>
-<p></p>
+<p>Para melhorar os resultados, foi realizado o balanceamento de classes, uma etapa essencial para ajudar o modelo a aprender a classificar corretamente todas as categorias, especialmente a classe "neutro", que tinha menos representações nos dados. Isso foi feito atribuindo um peso maior para os exemplos dessa classe no momento do treinamento. Esses pesos foram calculados com base na quantidade de exemplos de cada classe, de forma que as categorias menos representadas tivessem maior influência, garantindo que o modelo aprendesse de maneira mais equilibrada</p>
 
 Trecho do código:
 
