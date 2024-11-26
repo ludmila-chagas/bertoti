@@ -1010,6 +1010,25 @@ dataset = pd.concat([dataset, augmented_comments_df], ignore_index=True)
 ```
 </details>
 
+<details>
+<summary>Ajustes de peso da classe Neutro</summary>
+<p></p>
+
+Trecho do código:
+
+```
+# Calcula os pesos de amostra com base nas classes
+class_weights = np.zeros(len(Y_train))
+class_counts = np.bincount(Y_train)
+for i in range(len(class_counts)):
+    class_weights[Y_train == i] = len(Y_train) / class_counts[i]
+
+# Treina o modelo XGBoost com pesos de amostra
+xgboost.fit(X_train, Y_train, sample_weight=class_weights)
+
+```
+
+</details>
  
  ### Aprendizados Efetivos em Hard Skills
 
