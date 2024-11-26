@@ -1082,7 +1082,7 @@ Também conhecido como Golang, é uma linguagem de programação desenvolvida pe
 
 ### Contribuições pessoais
 
-a
+Esse projeto foi meu primeiro contato com Go, e pude aprender muito ao explorar suas funcionalidades e aplicá-las no desenvolvimento. Além disso, fui responsável por implementar o pipeline de CI (<i>Continuous Integration</i>), garantindo um fluxo de trabalho mais automatizado e eficiente, e pela criação do ETL (<i>Extract, Transform, Load</i>), que desempenhou um papel essencial na coleta, transformação e integração dos dados para a aplicação. Trabalhar com Go não apenas me desafiou a sair da minha zona de conforto, mas também me deu a oportunidade de agregar valor ao projeto enquanto desenvolvia novas habilidades.
 
 Dentre meu trabalho realizado, posso destacar:
 
