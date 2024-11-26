@@ -33,7 +33,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto](#visão-do-projeto-1)
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
-- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
+- [Aprendizados Efetivos Hard Skills](#aprendizados-efetivos-hs-1)
 </details>
 
 <details>
