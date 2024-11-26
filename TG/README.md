@@ -1012,7 +1012,7 @@ dataset = pd.concat([dataset, augmented_comments_df], ignore_index=True)
 
 <details>
 <summary>Ajustes de peso da classe Neutro</summary>
-<p>Para melhorar os resultados, foi realizado o balanceamento de classes, uma etapa essencial para ajudar o modelo a aprender a classificar corretamente todas as categorias, especialmente a classe "neutro", que tinha menos representações nos dados. Isso foi feito atribuindo um peso maior para os exemplos dessa classe no momento do treinamento. Esses pesos foram calculados com base na quantidade de exemplos de cada classe, de forma que as categorias menos representadas tivessem maior influência, garantindo que o modelo aprendesse de maneira mais equilibrada</p>
+<p>Para melhorar a capacidade do modelo em lidar com categorias desbalanceadas, foi realizado o ajuste dos pesos das classes durante o treinamento. Essa técnica foi aplicada para garantir que a classe "neutro", com menos exemplos disponíveis, tivesse uma influência proporcionalmente maior no aprendizado. Os pesos foram calculados considerando o número de amostras em cada classe, assegurando que as categorias menos representadas recebessem maior atenção do modelo. Assim, foi possível alcançar um treinamento mais equilibrado e representativo.</p>
 
 Trecho do código:
 
