@@ -33,7 +33,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto](#visão-do-projeto-1)
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
-- [Aprendizados Efetivos Hard Skills](#aprendizados-efetivos-em-hard-skills-1)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-1)
 </details>
 
 <details>
@@ -43,7 +43,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto](#visão-do-projeto-2)
 - [Principais tecnologias](#principais-tecnologias-2)
 - [Contribuições pessoais](#contribuições-pessoais-2)
-- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-2)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-hs-2)
 </details>
 
 <details>
@@ -53,7 +53,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto]
 - [Principais tecnologias]
 - [Contribuições pessoais]
-- [Aprendizados Efetivos HS]
+- [Aprendizados Efetivos em Hard Skills]
 </details>
 
 <details>
@@ -63,7 +63,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto](#visão-do-projeto-1)
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
-- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-hs-1)
 </details>
 
 <details>
@@ -73,7 +73,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto](#visão-do-projeto-1)
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
-- [Aprendizados Efetivos HS](#aprendizados-efetivos-hs-1)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-hs-1)
 </details>
 
 ---
@@ -696,7 +696,7 @@ class ClienteTest {
 
 </details>
 
-### Aprendizados Efetivos Hard Skills
+### Aprendizados Efetivos em Hard Skills
 Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprender a manipular o processamento de dados em uma tela para o usuário final e fazer a parte de integração com backend. Além disso, o que antes eram conceitos que havia entendido superficialmente hoje já estão consolidados, principalmente a respeito de Java, por ser o segundo projeto com backend desenvolvido nessa linguagem. Os destaques desse semestre vão para:
 
 - Consolidação de conhecimentos em Java;
