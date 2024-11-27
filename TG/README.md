@@ -49,11 +49,11 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 <details>
 <summary>Projeto 4: 2º semestre 2023</summary>
 
-- [Início Projeto 4]
-- [Visão do Projeto]
-- [Principais tecnologias]
-- [Contribuições pessoais]
-- [Aprendizados Efetivos em Hard Skills]
+- [Início Projeto 4](#projeto-4-2º-semestre-2023)
+- [Visão do Projeto](#visão-do-projeto-3)
+- [Principais tecnologias](#principais-tecnologias-3)
+- [Contribuições pessoais](#contribuições-pessoais-3)
+- [Aprendizados Efetivos em Hard Skills]()
 </details>
 
 <details>
@@ -873,7 +873,7 @@ public class Usuario implements UserDetails {
 
 </details>
 
-### Aprendizados Efetivos HS
+### Aprendizados Efetivos em Hard Skills
 Meu principal aprendizado foi a parte de front-end, pela primeira experiência com foco total nessa etapa e também pela abordagem da tecnologia Vue.js feita na disciplina de Laboratório de Desenvolvimento de Banco de Dados IV. Porém, foi muito valioso revisitar meus conhecimentos de back-end no final do projeto, tendo sido uma ótima maneira de fixar e consolidar os conhecimentos do Spring Boot e aprender sobre JPA. Gostaria de destacar como aprendizados:
 
 - Consolidação de conhecimentos do Spring Boot;
