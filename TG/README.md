@@ -53,27 +53,27 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Visão do Projeto](#visão-do-projeto-3)
 - [Principais tecnologias](#principais-tecnologias-3)
 - [Contribuições pessoais](#contribuições-pessoais-3)
-- [Aprendizados Efetivos em Hard Skills]()
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-3)
 </details>
 
 <details>
 <summary>Projeto 5: 6º semestre 2021</summary>
 
 - [Início Projeto 2](#projeto-5-1º-semestre-2021)
-- [Visão do Projeto](#visão-do-projeto-1)
-- [Principais tecnologias](#principais-tecnologias-1)
-- [Contribuições pessoais](#contribuições-pessoais-1)
-- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-hs-1)
+- [Visão do Projeto](#visão-do-projeto-4)
+- [Principais tecnologias](#principais-tecnologias-4)
+- [Contribuições pessoais](#contribuições-pessoais-4)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-4)
 </details>
 
 <details>
 <summary>Projeto 6: 5º semestre 2021</summary>
 
 - [Início Projeto 2](#projeto-5-1º-semestre-2021)
-- [Visão do Projeto](#visão-do-projeto-1)
-- [Principais tecnologias](#principais-tecnologias-1)
-- [Contribuições pessoais](#contribuições-pessoais-1)
-- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-hs-1)
+- [Visão do Projeto](#visão-do-projeto-5)
+- [Principais tecnologias](#principais-tecnologias-5)
+- [Contribuições pessoais](#contribuições-pessoais-5)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-5)
 </details>
 
 ---
