@@ -66,6 +66,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Principais tecnologias](#principais-tecnologias-4)
 - [Contribuições pessoais](#contribuições-pessoais-4)
 - [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-4)
+- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-4)
 </details>
 
 <details>
@@ -76,6 +77,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Principais tecnologias](#principais-tecnologias-5)
 - [Contribuições pessoais](#contribuições-pessoais-5)
 - [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-5)
+- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-5)
 </details>
 
 ---
@@ -890,6 +892,10 @@ Meu principal aprendizado foi a parte de front-end, pela primeira experiência c
 - Mais prática em estilização front-end (HTML e CSS).
 
 ### Aprendizados Efetivos em Soft Skills
+Seguindo no propósito de me adaptar ao trabalho com diferentes perfis de pessoa, nesse semestre resolvi mudar de grupo mais uma vez, tendo vivido desafios parecidos com os do último semestre, em relação a adaptação do ritmo de desenvolvimento e da comunicação da nova equipe. Além disso, foi um projeto onde pude me envolver ainda mais com o desenvolvimento frontend, ganhando agilidade para trabalhar em frentes diferentes, executando diversas funções. 
+
+- Adaptação a nova equipe de desenvolvimento;
+- Desenvolvimento em diferentes frentes.
 
 -----
 -----
@@ -1061,6 +1067,8 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 * Manipulação de Dados;
 * Data Augmentation;
 * Consolidação de conhecimentos em Python.
+
+### Aprendizados Efetivos em Soft Skills
 
 -----
 -----
