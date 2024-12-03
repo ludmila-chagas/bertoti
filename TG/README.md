@@ -1069,6 +1069,7 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 * Consolidação de conhecimentos em Python.
 
 ### Aprendizados Efetivos em Soft Skills
+Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação a rotina de desenvolvimento não foi o maior desafio, abrindo 
 
 -----
 -----
