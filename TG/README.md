@@ -44,6 +44,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Principais tecnologias](#principais-tecnologias-2)
 - [Contribuições pessoais](#contribuições-pessoais-2)
 - [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-2)
+- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-2)
 </details>
 
 <details>
@@ -54,6 +55,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 - [Principais tecnologias](#principais-tecnologias-3)
 - [Contribuições pessoais](#contribuições-pessoais-3)
 - [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-3)
+- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-3)
 </details>
 
 <details>
@@ -263,8 +265,7 @@ Já em relação as soft skills posso destacar:
 
 - Trabalho em equipe;
 - Trabalho remoto (o semestre foi concluído de forma remota por conta da pandemia de Covid-19);
-- Comunicação clara e objetiva;
-- Proatividade.
+- Introdução à metodologia ágil Scrum.
 
 
 ------
@@ -466,7 +467,8 @@ Como meu primeiro projeto utilizando Java, foi uma ótima introdução a essa li
 ### Aprendizados Efetivos em Soft Skills
 Como foi o primeiro projeto da faculdade onde nos relacionamos diretamente com o cliente, dando início a essa dinâmica enriquecedora, que não era um representante ds faculdade e sim uma empresa apoiadora, posso destacar como soft skills adquiridas:
 
-- Interagir com um cliente real (empresa terceira), seguindo metodologia ágil Scrum;
+- Interagir com um cliente real (empresa terceira);
+- Aplicação da metodologia ágil Scrum na rotina de desenvolvimento;
 - Adaptação na equipe de desenvolvimento com novos integrantes.
 
 
@@ -700,10 +702,16 @@ class ClienteTest {
 Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprender a manipular o processamento de dados em uma tela para o usuário final e fazer a parte de integração com backend. Além disso, o que antes eram conceitos que havia entendido superficialmente hoje já estão consolidados, principalmente a respeito de Java, por ser o segundo projeto com backend desenvolvido nessa linguagem. Os destaques desse semestre vão para:
 
 - Consolidação de conhecimentos em Java;
-- Introdução a desenvolvimento frontend (javascript, HTML e CSS);
+- Introdução a desenvolvimento front-end (javascript, HTML e CSS);
 - Utilização de ORM (Object Relational Mapper);
 - Gitflow;
-- Cultura de testes.
+- Introdução à cultura de testes.
+
+### Aprendizados Efetivos em Soft Skills
+Esse projeto foi o primeiro depois do meu retorno à Fatec, pois antes dele eu tranquei minha matrícula por 2 semestres. Consequentemente, foi a primeira vez trabalhando com uma equipe 100% nova, onde já existia uma sinergia entre os antigos membros e eu era a pessoa nova. Foi desafiador me adaptar a rotina de pessoas que mal conhecia, porém enriquecedor para minha carreira, por me trazer a habilidade de trabalhar com diferentes perfis de pares. Os destaques são:
+
+- Adaptação a nova equipe de desenvolvimento; 
+- Adaptação ao trabalho híbrido (pois com a grade bagunçada, tinha aula em apenas 3 dias da semana).
 
 ---
 ---
@@ -880,6 +888,8 @@ Meu principal aprendizado foi a parte de front-end, pela primeira experiência c
 - Consolidação de conhecimentos do JPA;
 - Consolidação de conhecimento em front-end (Vue.js e Axios);
 - Mais prática em estilização front-end (HTML e CSS).
+
+### Aprendizados Efetivos em Soft Skills
 
 -----
 -----
