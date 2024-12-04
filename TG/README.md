@@ -253,12 +253,12 @@ cursor = banco.cursor()
  
  ### Aprendizados Efetivos em Hard Skills
 
-Através dessse projeto tive uma pequena noção da dimensão de possibilidades de desenvolvimento através da programação, pois nunca tinha participado de algo tão complexo quanto ele. Meus destaques de aprendizados são:
+Através dessse projeto tive uma pequena noção da dimensão de possibilidades de desenvolvimento através da programação, pois nunca tinha participado de algo tão complexo quanto ele. Também foi meu primeiro contato com a linguagem Python, sendo uma bela introdução à essa tecnologia. Meus destaques de aprendizados são:
 
 - Banco de dados (em memória) e comandos básicos do SQL;
-- Programação na linguagem Python;
+- Introdução à linguagem Python;
 - Modelar um banco de dados simples;
-- Uso de estruturas de repetição e condições (while e if);
+- Uso de estruturas de repetição e condições (`while` e `if`);
 - Utilizar bibliotecas para viabilização do projeto;
 
 ### Aprendizados Efetivos em Soft Skills
@@ -713,7 +713,7 @@ Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprende
 Esse projeto foi o primeiro depois do meu retorno à Fatec, pois antes dele eu tranquei minha matrícula por 2 semestres. Consequentemente, foi a primeira vez trabalhando com uma equipe 100% nova, onde já existia uma sinergia entre os antigos membros e eu era a pessoa nova. Foi desafiador me adaptar a rotina de pessoas que mal conhecia, porém enriquecedor para minha carreira, por me trazer a habilidade de trabalhar com diferentes perfis de pares. Os destaques são:
 
 - Adaptação a nova equipe de desenvolvimento; 
-- Adaptação ao trabalho híbrido (pois com a grade bagunçada, tinha aula em apenas 3 dias da semana).
+- Adaptação ao trabalho remoto (tinha apenas três dias de aula na minha nova grade).
 
 ---
 ---
@@ -1101,13 +1101,12 @@ Também conhecido como Golang, é uma linguagem de programação desenvolvida pe
 
 ### Contribuições pessoais
 
-Esse projeto foi meu primeiro contato com Go, e pude aprender muito ao explorar suas funcionalidades e aplicá-las no desenvolvimento. Além disso, fui responsável por implementar o pipeline de CI (<i>Continuous Integration</i>), garantindo um fluxo de trabalho mais automatizado e eficiente, e pela criação do ETL (<i>Extract, Transform, Load</i>), que desempenhou um papel essencial na coleta, transformação e integração dos dados para a aplicação. Trabalhar com Go não apenas me desafiou a sair da minha zona de conforto, mas também me deu a oportunidade de agregar valor ao projeto enquanto desenvolvia novas habilidades.
-
+Esse projeto foi meu primeiro contato com a linguagem de programaçõa Go, e pude aprender muito ao explorar suas funcionalidades e aplicá-las no desenvolvimento. Além disso, fui responsável por implementar o pipeline de CI (<i>Continuous Integration</i>), garantindo um fluxo de trabalho mais automatizado e eficiente, e pela criação do ETL (<i>Extract, Transform, Load</i>), que desempenhou um papel essencial na coleta, transformação e integração dos dados para a aplicação. Trabalhar com Go não apenas me desafiou a sair da minha zona de conforto, mas também me deu a oportunidade de agregar valor ao projeto enquanto desenvolvia novas habilidades.
 Dentre meu trabalho realizado, posso destacar:
 
 <details>
 <summary>ETL</summary>
-<p>A</p>
+<p>Desenvolvi o ETL responsável por receber dados, tratá-los e carregá-los no banco de dados datawarehouse. O meu trabalho aqui foi desde criar os dados simulando o que receberíamos do cliente em uma planilha, até o código responsável por todas essas etapas, com destaque para a última, que é a maior e mais complexa, já que faz a conexão com a base e carrega os dados par as tabelas uma determinada ordem, respeitando as regras de restrição, a fim de evitar erros. </p>
 
 Trecho do código:
 
