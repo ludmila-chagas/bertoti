@@ -1229,7 +1229,7 @@ jobs:
 
 <details>
 <summary>Criação do endpoint de vagas</summary>
-<p>Trabalhei na criação de um endpoint do tipo POST, que retorna vagas filtradas por </p>
+<p>Explorando pela primeira vez e aprendendo sobre a linguagem Go, trabalhei na criação de um endpoint do tipo POST, que retorna vagas filtradas por ID de processos seletivos. O mais desafiador nessa tarefa foi entender as particularidades dessa linguagem, já que a maior parte do curso trabalhei com back-end em Java, então vi muitas coisas novas e que com certeza enriqueceram minhas habilidades como programadora.</p>
 
 Trecho do código:
 
@@ -1266,18 +1266,6 @@ func VacancyList(
 	}
 }
 ```
-</details>
-
-<details>
-<summary>A</summary>
-<p></p>
-
-Trecho do código:
-
-```
-
-```
-
 </details>
  
  ### Aprendizados Efetivos em Hard Skills
