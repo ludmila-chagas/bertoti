@@ -713,7 +713,7 @@ Sendo o primeiro projeto com frontend em que atuei, foi muito importante aprende
 Esse projeto foi o primeiro depois do meu retorno à Fatec, pois antes dele eu tranquei minha matrícula por 2 semestres. Consequentemente, foi a primeira vez trabalhando com uma equipe 100% nova, onde já existia uma sinergia entre os antigos membros e eu era a pessoa nova. Foi desafiador me adaptar a rotina de pessoas que mal conhecia, porém enriquecedor para minha carreira, por me trazer a habilidade de trabalhar com diferentes perfis de pares. Os destaques são:
 
 - Adaptação a nova equipe de desenvolvimento; 
-- Adaptação ao trabalho remoto (tinha apenas três dias de aula na minha nova grade).
+- Adaptação a nova rotina de trabalho (tinha apenas três dias de aula na minha nova grade).
 
 ---
 ---
@@ -1069,7 +1069,7 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 * Consolidação de conhecimentos em Python.
 
 ### Aprendizados Efetivos em Soft Skills
-Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação a rotina de desenvolvimento não foi o maior desafio, abrindo 
+Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação aos membros e a rotina de desenvolvimento não foi o maior desafio, deixando mais destaque para desenvolver habilidade de apresentação (levando em conta o desafio de escrever um script de Machine Learning bem documentado no Jupyter Notebook)
 
 -----
 -----
