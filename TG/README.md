@@ -1192,24 +1192,79 @@ def main(self):
 
 <details>
 <summary>CI</summary>
-<p>A</p>
+<p>Criei as pipelines de Integração Contínua do projeto, tendo como foco testar garantir qualidade e funcionamento antes do deploy. Foram feitas 4 pipelines para cada submódulo do projeto (back e front-end), a de build, as de testes (uma para testes de integração e outra para testes unitários) e a de deploy, cada uma com seus próprio gatilhos e regras de branches específicas.</p>
 
 Trecho do código:
 
-```
+```yaml
+name: Integration tests
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "dev", "main" ]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    environment: ci_env
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go Environment
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.23.0'
+
+    - name: Generate Required Files
+      run: go run scripts/generate/main.go
+
+    - name: Run Integration Tests
+      run: make test-integration
 
 ```
 
 </details>
 
 <details>
-<summary></summary>
-<p>A</p>
+<summary>Criação do endpoint de vagas</summary>
+<p>Trabalhei na criação de um endpoint do tipo POST, que retorna vagas filtradas por </p>
 
 Trecho do código:
 
-```
+```go
+// @Success 200 {array} SuggestionsResponse
+// @Router /suggestions/vacancies [post]
+func VacancyList(
+	dwClient *ent.Client,
+) func(c *gin.Context) {
+	return func(c *gin.Context) {
+		var processesIds []int
+		if err := c.ShouldBindJSON(&processesIds); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request body"})
+			return
+		}
 
+		vacancyService := service.NewVacancyService(dwClient)
+
+		vacancies, err := vacancyService.GetVacancySuggestions(c.Request.Context(), processesIds)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+			return
+		}
+
+		var response []SuggestionsResponse
+		for _, vacancy := range vacancies {
+			response = append(response, SuggestionsResponse{
+				Id:   vacancy.ID,
+				Name: vacancy.Title,
+			})
+		}
+
+		c.JSON(http.StatusOK, response)
+	}
+}
 ```
 </details>
 
