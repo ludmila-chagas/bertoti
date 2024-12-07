@@ -131,7 +131,7 @@ Dentre as funcionalidades que desenvolvi, estão:
 
 Trecho do código:
 
-```
+```python
 while True:
     materia_cadastro = str(input('Qual matéria gostaria de cadastrar: ')).strip()
     materia.append(materia_cadastro)
@@ -199,7 +199,7 @@ with open("novo_dado.txt", "a+", encoding='utf-8') as arquivo:
 
 Trecho do código:
 
-```
+```python
 import sqlite3
 from sqlite3 import Error
 def conexaobanco():
@@ -229,7 +229,7 @@ def inserir(conexao,sql):
 
 Trecho do código:
 
-```
+```python
 import sqlite3
 
 banco = sqlite3.connect('dicas_athena.db')
@@ -519,7 +519,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 
  Trecho do código backend:
  
-```
+```java
 
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	    @Transactional
@@ -554,7 +554,7 @@ Mais uma vez atuando como desenvolvedora, além de programar também atuei como 
 
 Trecho do código fronted:
 
-```
+```java
 function editar_vendas() {
   if (selectedRow) {
     const selectedId = selectedRow.getAttribute('data-id');
@@ -597,7 +597,7 @@ function editar_vendas() {
 
  Trecho do código backend:
 
-```
+```java
    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/topProdutos")
     public List<Map<String, Object>> getTopProdutos() {
@@ -623,7 +623,7 @@ function editar_vendas() {
 
 
  Trecho do código fronted:
-```
+```javascript
 function generateProdutosChart() {
   fetch("http://localhost:8080/produto/topProdutos")
     .then(function (response) {
@@ -669,7 +669,7 @@ function generateProdutosChart() {
 
 Trecho do código:
 
-```
+```java
 @SpringBootTest
 class ClienteTest {
 
@@ -758,7 +758,7 @@ Segui com minha atuação no desenvolvimento, dessa vez me desafiando a atuar na
  
 Trecho do código:
 
-```
+```javascript
 <div class="form-body">
       <div class="input-group">
         <div class="input-box">
@@ -806,7 +806,7 @@ Trecho do código:
 
 Trecho do código:
 
-```
+```javascript
 const nomeSegmento = ref('');
 const idSegmento = ref('');
 const checklistList = ref([]);
@@ -846,7 +846,7 @@ Aqui voltei minha atenção ao back-end para conclusão do mapeamento das duas �
 
 Trecho do código:
 
-```
+```java
 @Entity
 @Table(name = "usuario")
 public class Usuario implements UserDetails {
@@ -956,7 +956,7 @@ Dentre meu trabalho realizado, posso destacar:
 
 Trecho do código:
 
-```
+```python
 # Carrega o conjunto de dados
 dataset = pd.read_csv("C:\\fatec\\B2W-Reviews01\\B2W-Reviews01.csv")
 
@@ -1020,7 +1020,7 @@ dump((model_ngrams, ngram_vectorizer), 'modelo_naive_bayes.joblib')
 
 Trecho do código:
 
-```
+```python
 # Filtra os comentários neutros
 neutral_comments = dataset.loc[dataset['feeling'] == 1]
 
@@ -1046,7 +1046,7 @@ dataset = pd.concat([dataset, augmented_comments_df], ignore_index=True)
 
 Trecho do código:
 
-```
+```python
 # Calcula os pesos de amostra com base nas classes
 class_weights = np.zeros(len(Y_train))
 class_counts = np.bincount(Y_train)
