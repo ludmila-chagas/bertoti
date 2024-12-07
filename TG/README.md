@@ -1110,7 +1110,81 @@ Dentre meu trabalho realizado, posso destacar:
 
 Trecho do código:
 
-```
+```python
+sheet = './etl/dados_dw_nova.xlsx'
+
+dfs = pd.read_excel(sheet, sheet_name=None)  # Carrega todas as abas como dicionário de DataFrames
+
+# Separar cada DataFrame por nome de aba
+df_department = dfs['Departamentos']
+df_user = dfs['Usuários']
+df_process = dfs['Processos']
+df_vacancy = dfs['Vagas']
+df_candidates = dfs['Candidatos']
+df_vacancy_candidate = dfs['Vaga-Candidatos']
+df_interview = dfs['Entrevistas']
+df_feedback = dfs['Feedbacks']
+df_hiring = dfs['Contratações']
+...
+def create_fact_table(df_process, df_vacancy, df_vacancy_candidate, df_interview, df_feedback, df_hiring):
+    """Cria a tabela fato com todas as métricas e dimensões necessárias."""
+    
+    fact_table = pd.merge(df_process, df_vacancy, left_on='pc_id', right_on='pc_id', suffixes=('_process', '_vacancy'))
+    
+    candidates_per_vacancy = df_vacancy_candidate.groupby('vc_id').size()
+    fact_table['met_total_candidates_applied'] = fact_table['vc_id'].map(candidates_per_vacancy).fillna(0).astype(int)
+    
+    interviews_per_vacancy = df_interview.groupby('vc_id').size()
+    fact_table['met_total_candidates_interviewed'] = fact_table['vc_id'].map(interviews_per_vacancy).fillna(0).astype(int)
+    
+    hires_per_vacancy = df_hiring.groupby('vc_id').size()
+    fact_table['met_total_candidates_hired'] = fact_table['vc_id'].map(hires_per_vacancy).fillna(0).astype(int)
+    
+    fact_table['met_sum_duration_hiring_proces'] = (pd.to_datetime(fact_table['pc_finish_date']) - pd.to_datetime(fact_table['pc_initial_date'])).dt.days.fillna(0).astype(int)
+    
+    salary_sum = df_hiring.groupby('vc_id')['hr_initial_salary'].sum()
+    fact_table['met_sum_salary_initial'] = fact_table['vc_id'].map(salary_sum).fillna(0).astype(int)
+    
+    feedback_counts = df_feedback.groupby(['vc_id', 'fd_type']).size().unstack(fill_value=0)
+    feedback_counts = feedback_counts.reindex(columns=[1, 2, 3], fill_value=0) 
+    fact_table = fact_table.merge(feedback_counts, left_on='vc_id', right_index=True, how='left')
+...
+class PostgreSQLLoader:
+    def __init__(self):
+        """Inicializa o loader com as credenciais do PostgreSQL."""
+        self.connection_string = f'postgresql+pg8000://{dw_user}:{dw_password}@{dw_host}:5433/{dw_name}'
+        self.engine = create_engine(self.connection_string)
+        self.setup_logging()
+...
+def main(self):
+        """Função principal para teste de inserção."""
+        try:
+            loader = PostgreSQLLoader()
+            if loader.test_connection():
+                print("Conexão bem-sucedida! Iniciando carga de teste...")
+
+                # Carrega dim_datetime primeiro, independentemente de outras tabelas
+                if dim_datetime is not None:
+                    loader.load_table(dim_datetime, 'dim_datetime', update_column=None)
+
+                # Variável para rastrear se alguma tabela foi atualizada
+                tables_updated = False
+
+                if dim_department is not None:
+                    if loader.load_table(dim_department, 'dim_department', update_column=None):
+                        tables_updated = True
+                if dim_user is not None:
+                    if loader.load_table(dim_user, 'dim_user', 'usr_last_update'):
+                        tables_updated = True
+                if dim_process is not None:
+                    if loader.load_table(dim_process, 'dim_process', 'pc_finish_date'):
+                        tables_updated = True
+                if dim_vacancy is not None:
+                    if loader.load_table(dim_vacancy, 'dim_vacancy', 'vc_closing_date'):
+                        tables_updated = True
+                if dim_candidate is not None:
+                    if loader.load_table(dim_candidate, 'dim_candidate', 'cd_last_update'):
+                        tables_updated = True
 
 ```
 </details>
