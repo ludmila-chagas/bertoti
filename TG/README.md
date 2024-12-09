@@ -16,7 +16,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 # Índice
  
 <details>
-<summary>Projeto 1: 1º semestre 2021</summary>
+<summary>Projeto 1: 1º semestre - 2021</summary>
 
 - [Início Projeto 1](#projeto-1-1º-semestre-2021)
 - [Visão do Projeto](#visão-do-projeto)
@@ -27,7 +27,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 2: 2º semestre 2021</summary>
+<summary>Projeto 2: 2º semestre - 2021</summary>
 
 - [Início Projeto 2](#projeto-2-2º-semestre-2021)
 - [Visão do Projeto](#visão-do-projeto-1)
@@ -37,7 +37,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 3: 1º semestre 2023</summary>
+<summary>Projeto 3: 1º semestre - 2023</summary>
 
 - [Início Projeto 3](#projeto-3-1º-semestre-2023)
 - [Visão do Projeto](#visão-do-projeto-2)
@@ -48,7 +48,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 4: 2º semestre 2023</summary>
+<summary>Projeto 4: 2º semestre - 2023</summary>
 
 - [Início Projeto 4](#projeto-4-2º-semestre-2023)
 - [Visão do Projeto](#visão-do-projeto-3)
@@ -59,7 +59,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 5: 6º semestre 2021</summary>
+<summary>Projeto 5: 6º semestre - 2021</summary>
 
 - [Início Projeto 5](#projeto-5-1º-semestre-2024)
 - [Visão do Projeto](#visão-do-projeto-4)
@@ -70,14 +70,14 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 6: 5º semestre 2021</summary>
+<summary>Projeto 6: 5º semestre - 2021</summary>
 
-- [Início Projeto 6](#projeto-5-1º-semestre-2024)
-- [Visão do Projeto](#visão-do-projeto-5)
-- [Principais tecnologias](#principais-tecnologias-5)
-- [Contribuições pessoais](#contribuições-pessoais-5)
-- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-5)
-- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-5)
+- [Início Projeto 6](#projeto-6-1º-semestre-2024)
+- [Visão do Projeto](#visão-do-projeto-6)
+- [Principais tecnologias](#principais-tecnologias-6)
+- [Contribuições pessoais](#contribuições-pessoais-6)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-6)
+- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-6)
 </details>
 
 ---
