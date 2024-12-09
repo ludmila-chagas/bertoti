@@ -4,7 +4,7 @@
 
 <p align="center">Olá, seja bem-vindo! </p>
 
-Meu nome é Ludmila Mariana Chagas e sou estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
+Meu nome é Ludmila Mariana Chagas, sou DBA e estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/b81508ba-eb50-4cb5-98d6-336e7b40d582" alt="Imagem do WhatsApp" width="300"></p>
 
