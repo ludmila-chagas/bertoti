@@ -1081,9 +1081,7 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 * Consolidação de conhecimentos em Python.
 
 ### Aprendizados Efetivos em Soft Skills
-Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação aos membros e a rotina de desenvolvimento não foi o maior desafio, deixando mais destaque para desenvolver habilidade de apresentação (levando em conta que fazia parte do desafio documentar bem o script de Machine Learning criado, dividindo em etapas e tornando elas compreensível mesmo para pessoas que não são da área. O maior destaque foi:
-
-* Apresentação de projeto.
+Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação aos membros e a rotina de desenvolvimento não foi o maior desafio, deixando mais destaque para desenvolver habilidade de apresentação (levando em conta que fazia parte do desafio documentar bem o script de Machine Learning criado, dividindo em etapas e tornando elas compreensível mesmo para pessoas que não são da área.
 
 -----
 -----
@@ -1284,8 +1282,11 @@ func VacancyList(
 </details>
  
  ### Aprendizados Efetivos em Hard Skills
+Durante o projeto, aprendi muito com a exploração de novas tecnologias, como a linguagem Go, que ampliou minha visão sobre desenvolvimento de back-end ao lidar com APIs de alto desempenho e escalabilidade. Também foi muito interessante implementar as pipelines de CI, o que aprimorou minha experiência com automação de testes e deploy e me permitiu adquirir mais afinidade com práticas de DevOps. Além disso, desenvolver uma pipeline ETL pela primeira vez fortaleceu minhas habilidades em manipulação de dados e integração com PostgreSQL. Nessa experiência, posso destacar os seguintes aprendizados:
 
+* Aprimoramento na manipulação de dados com Python;
+* Introdução a práticas de DevOps;
+* Desenvolvimento em uma nova linguagem (Go).
 
 ### Aprendizados Efetivos em Soft Skills
-
-
+Mais uma vez, aprendi muito sobre como apresentar o que desenvolvi e destacar o valor das minhas entregas. Nesse projeto, em especial, tive a oportunidade de realizar entregas mais complexas e individuais, como as pipelines de CI e a pipeline de ETL. Essa experiência reforçou a importância de saber comunicar a complexidade e o impacto do trabalho realizado, demonstrando que transmitir o valor das suas contribuições é tão essencial quanto a própria execução.
