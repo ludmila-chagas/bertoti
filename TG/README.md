@@ -1081,7 +1081,9 @@ Durante esse projeto, aprofundei meus conhecimentos em machine learning e manipu
 * Consolidação de conhecimentos em Python.
 
 ### Aprendizados Efetivos em Soft Skills
-Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação aos membros e a rotina de desenvolvimento não foi o maior desafio, deixando mais destaque para desenvolver habilidade de apresentação (levando em conta o desafio de escrever um script de Machine Learning bem documentado no Jupyter Notebook)
+Com uma equipe com integrantes que eu já conhecia (de semestres passados), a adaptação aos membros e a rotina de desenvolvimento não foi o maior desafio, deixando mais destaque para desenvolver habilidade de apresentação (levando em conta que fazia parte do desafio documentar bem o script de Machine Learning criado, dividindo em etapas e tornando elas compreensível mesmo para pessoas que não são da área. O maior destaque foi:
+
+* Apresentação de projeto.
 
 -----
 -----
