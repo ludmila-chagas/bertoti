@@ -45,6 +45,7 @@ No desenvolvimento, meu foco está no back-end, área na qual adquiri maior expe
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
 - [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-1)
+- [Aprendizados Efetivos Soft Skills](#aprendizados-efetivos-em-soft-skills-1)
 </details>
 
 <details>
