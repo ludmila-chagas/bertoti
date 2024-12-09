@@ -16,9 +16,9 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 # Índice
  
 <details>
-<summary>Projeto 1: 1º semestre 2021</summary>
+<summary>Projeto 1: 1º semestre de 2021</summary>
 
-- [Início Projeto 1](#projeto-1-1º-semestre-2021)
+- [Início Projeto 1](#projeto-1-1º-semestre-de-2021)
 - [Visão do Projeto](#visão-do-projeto)
 - [Principais tecnologias](#principais-tecnologias)
 - [Contribuições pessoais](#contribuições-pessoais)
@@ -27,9 +27,9 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 2: 2º semestre 2021</summary>
+<summary>Projeto 2: 2º semestre de 2021</summary>
 
-- [Início Projeto 2](#projeto-2-2º-semestre-2021)
+- [Início Projeto 2](#projeto-2-2º-semestre-de-2021)
 - [Visão do Projeto](#visão-do-projeto-1)
 - [Principais tecnologias](#principais-tecnologias-1)
 - [Contribuições pessoais](#contribuições-pessoais-1)
@@ -37,9 +37,9 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 3: 1º semestre 2023</summary>
+<summary>Projeto 3: 1º semestre de 2023</summary>
 
-- [Início Projeto 3](#projeto-3-1º-semestre-2023)
+- [Início Projeto 3](#projeto-3-1º-semestre-de-2023)
 - [Visão do Projeto](#visão-do-projeto-2)
 - [Principais tecnologias](#principais-tecnologias-2)
 - [Contribuições pessoais](#contribuições-pessoais-2)
@@ -48,9 +48,9 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 4: 2º semestre 2023</summary>
+<summary>Projeto 4: 2º semestre de 2023</summary>
 
-- [Início Projeto 4](#projeto-4-2º-semestre-2023)
+- [Início Projeto 4](#projeto-4-2º-semestre-de=2023)
 - [Visão do Projeto](#visão-do-projeto-3)
 - [Principais tecnologias](#principais-tecnologias-3)
 - [Contribuições pessoais](#contribuições-pessoais-3)
@@ -59,9 +59,9 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 5: 1º semestre 2024</summary>
+<summary>Projeto 5: 1º semestre de 2024</summary>
 
-- [Início Projeto 5](#projeto-5-1º-semestre-2024)
+- [Início Projeto 5](#projeto-5-1º-semestre-de-2024)
 - [Visão do Projeto](#visão-do-projeto-4)
 - [Principais tecnologias](#principais-tecnologias-4)
 - [Contribuições pessoais](#contribuições-pessoais-4)
@@ -70,9 +70,9 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 6: 2º semestre 2024</summary>
+<summary>Projeto 6: 2º semestre de 2024</summary>
 
-- [Início Projeto 6](#projeto-6-2º-semestre-2024)
+- [Início Projeto 6](#projeto-6-2º-semestre-de-2024)
 - [Visão do Projeto](#visão-do-projeto-5)
 - [Principais tecnologias](#principais-tecnologias-5)
 - [Contribuições pessoais](#contribuições-pessoais-5)
