@@ -61,7 +61,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 <details>
 <summary>Projeto 5: 6º semestre 2021</summary>
 
-- [Início Projeto 2](#projeto-5-1º-semestre-2021)
+- [Início Projeto 5](#projeto-5-1º-semestre-2024)
 - [Visão do Projeto](#visão-do-projeto-4)
 - [Principais tecnologias](#principais-tecnologias-4)
 - [Contribuições pessoais](#contribuições-pessoais-4)
@@ -72,7 +72,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 <details>
 <summary>Projeto 6: 5º semestre 2021</summary>
 
-- [Início Projeto 2](#projeto-5-1º-semestre-2021)
+- [Início Projeto 6](#projeto-5-1º-semestre-2024)
 - [Visão do Projeto](#visão-do-projeto-5)
 - [Principais tecnologias](#principais-tecnologias-5)
 - [Contribuições pessoais](#contribuições-pessoais-5)
