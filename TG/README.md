@@ -1241,7 +1241,7 @@ jobs:
 
 <details>
 <summary>Criação do endpoint de vagas</summary>
-<p>Explorando pela primeira vez e aprendendo sobre a linguagem Go, trabalhei na criação de um endpoint do tipo POST, que retorna vagas filtradas por ID de processos seletivos. O mais desafiador nessa tarefa foi entender as particularidades dessa linguagem, já que a maior parte do curso trabalhei com back-end em Java, então vi muitas coisas novas e que com certeza enriqueceram minhas habilidades como programadora.</p>
+<p>Explorando e aprendendo a linguagem Go pela primeira vez, desenvolvi um endpoint do tipo POST para retornar vagas filtradas por ID de processos seletivos. O maior desafio foi compreender as particularidades dessa linguagem, especialmente considerando minha experiência anterior com back-end em Java. Essa experiência me expôs a novos conceitos e abordagens, que enriqueceram significativamente minhas habilidades como programadora.</p>
 
 Trecho do código:
 
