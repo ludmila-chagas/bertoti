@@ -11,7 +11,16 @@ Meu nome é Ludmila Mariana Chagas, sou DBA e estudante do tecnólogo de Banco d
 
 ## Principais conhecimentos
 
-Tive meu primeiro contato com programação em um curso de técnico, sendo minha linguagem ingressante C++. Lá aprendi o básico de lógica de programação, porém foi na Fatec que desenvolvi com profundidade meus conhecimentos em Programação Orientada a Objetos e principalmente em Java, sendo hoje minha principal linguagem utilizada. Meu foco está no desenvolvimento backend, com implementações de webservices especialmente pelo framework Springboot.
+Meu primeiro contato acadêmico com tecnologia e programação foi em 2018, durante o curso técnico de Redes de Computadores na ETEC de Jacareí, onde comecei a aprender lógica de programação com C++. Apesar de ter me afastado da área ao iniciar uma carreira em negócios, o interesse pela tecnologia permaneceu.
+Em 2021, decidi retomar esse caminho ao ingressar na Fatec, onde aprofundei meus conhecimentos em programação, banco de dados, sistemas operacionais e outras assuntos relacionados. Essa formação me permitiu desenvolver habilidades práticas e explorar novas tecnologias.
+Atualmente, minhas principais linguagens de programação são:
+
+* Java, com ênfase no framework Spring Boot;
+* Python, utilizando bibliotecas como Pandas e NumPy;
+* JavaScript, com experiência em Vue.js.
+
+Além disso, tenho um contato significativo com o SGBD (Sistema Gerenciador de Banco de Dados) PostgreSQL, atuando como DBA desde janeiro de 2024. 
+No desenvolvimento, meu foco está no back-end, área na qual adquiri maior experiência ao longo dos projetos que participei.
 
 # Índice
  
