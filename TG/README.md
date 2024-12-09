@@ -4,7 +4,7 @@
 
 <p align="center">Olá, seja bem-vindo! </p>
 
-Meu nome é Ludmila Mariana Chagas, sou DBA e estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
+Meu nome é Ludmila, sou DBA e estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/b81508ba-eb50-4cb5-98d6-336e7b40d582" alt="Imagem do WhatsApp" width="300"></p>
 
@@ -19,7 +19,7 @@ Atualmente, minhas principais linguagens de programação são:
 * Python, utilizando bibliotecas como Pandas e NumPy;
 * JavaScript, com experiência em Vue.js.
 
-Além disso, tenho um contato significativo com o SGBD (Sistema Gerenciador de Banco de Dados) PostgreSQL, atuando como DBA desde janeiro de 2024. 
+Além disso, tenho um contato significativo com o SGBD (Sistema Gerenciador de Banco de Dados) PostgreSQL, atuando como DBA (Database Administrator - Administradora de Banco de Dados) desde janeiro de 2024. 
 No desenvolvimento, meu foco está no back-end, área na qual adquiri maior experiência ao longo dos projetos que participei.
 
 # Índice
