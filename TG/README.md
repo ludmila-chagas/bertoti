@@ -22,6 +22,8 @@ Atualmente, minhas principais linguagens de programação são:
 Além disso, tenho um contato significativo com o SGBD (Sistema Gerenciador de Banco de Dados) PostgreSQL, atuando como DBA (Database Administrator - Administradora de Banco de Dados) desde janeiro de 2024. 
 No desenvolvimento, meu foco está no back-end, área na qual adquiri maior experiência ao longo dos projetos que participei.
 
+---
+
 # Índice
  
 <details>
