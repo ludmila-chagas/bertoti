@@ -16,7 +16,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 # Índice
  
 <details>
-<summary>Projeto 1: 1º semestre - 2021</summary>
+<summary>Projeto 1: 1º semestre 2021</summary>
 
 - [Início Projeto 1](#projeto-1-1º-semestre-2021)
 - [Visão do Projeto](#visão-do-projeto)
@@ -27,7 +27,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 2: 2º semestre - 2021</summary>
+<summary>Projeto 2: 2º semestre 2021</summary>
 
 - [Início Projeto 2](#projeto-2-2º-semestre-2021)
 - [Visão do Projeto](#visão-do-projeto-1)
@@ -37,7 +37,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 3: 1º semestre - 2023</summary>
+<summary>Projeto 3: 1º semestre 2023</summary>
 
 - [Início Projeto 3](#projeto-3-1º-semestre-2023)
 - [Visão do Projeto](#visão-do-projeto-2)
@@ -48,7 +48,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 4: 2º semestre - 2023</summary>
+<summary>Projeto 4: 2º semestre 2023</summary>
 
 - [Início Projeto 4](#projeto-4-2º-semestre-2023)
 - [Visão do Projeto](#visão-do-projeto-3)
@@ -59,7 +59,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 5: 6º semestre - 2021</summary>
+<summary>Projeto 5: 1º semestre 2024</summary>
 
 - [Início Projeto 5](#projeto-5-1º-semestre-2024)
 - [Visão do Projeto](#visão-do-projeto-4)
@@ -70,7 +70,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 </details>
 
 <details>
-<summary>Projeto 6: 5º semestre - 2021</summary>
+<summary>Projeto 6: 2º semestre 2024</summary>
 
 - [Início Projeto 6](#projeto-6-2º-semestre-2024)
 - [Visão do Projeto](#visão-do-projeto-5)
@@ -82,7 +82,7 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 
 ---
 
-# [Projeto 1: 1º semestre 2021](https://github.com/silvercod3/Athena)
+# [Projeto 1: 1º semestre de 2021](https://github.com/silvercod3/Athena)
 
 #### 1º Semestre do Curso | Parceiro Acadêmico: Professor Fabiano Sabha
 
@@ -272,7 +272,7 @@ Já em relação as soft skills posso destacar:
 
 ------
 ------
-# [Projeto 2: 2º semestre 2021](https://github.com/PhatomFatec/PI_Necto_Systems)
+# [Projeto 2: 2º semestre de 2021](https://github.com/PhatomFatec/PI_Necto_Systems)
 
 #### 2º Semestre do Curso | Parceiro Acadêmico: Necto Systems
 
@@ -477,7 +477,7 @@ Como foi o primeiro projeto da faculdade onde nos relacionamos diretamente com o
 -----
 -----
 
-# [Projeto 3: 1º semestre 2023](https://github.com/Thunder53/Dom-Rock/tree/main)
+# [Projeto 3: 1º semestre de 2023](https://github.com/Thunder53/Dom-Rock/tree/main)
 
 #### 3º Semestre do Curso | Parceiro Acadêmico: Dom Rock
 
@@ -718,7 +718,7 @@ Esse projeto foi o primeiro depois do meu retorno à Fatec, pois antes dele eu t
 ---
 ---
 
-# [Projeto 4: 2º semestre 2023](https://github.com/B1nary-Devs/JAIA-SOFTWARE)
+# [Projeto 4: 2º semestre de 2023](https://github.com/B1nary-Devs/JAIA-SOFTWARE)
 
 #### 4º Semestre do Curso | Parceiro Acadêmico: Jaia Software
 
@@ -900,7 +900,7 @@ Seguindo no propósito de me adaptar ao trabalho com diferentes perfis de pessoa
 -----
 -----
 
-# [Projeto 5: 1º semestre 2024](https://github.com/GroupHextech/HEXTECH-API6sem)
+# [Projeto 5: 1º semestre de 2024](https://github.com/GroupHextech/HEXTECH-API6sem)
 
 #### 6º Semestre do Curso | Parceiro Acadêmico: Imagem
 
@@ -1074,7 +1074,7 @@ Com uma equipe com integrantes que eu já conhecia (de semestres passados), a ad
 -----
 -----
 
-# [Projeto 6: 2º semestre 2024](https://github.com/projetoKhali/api5)
+# [Projeto 6: 2º semestre de 2024](https://github.com/projetoKhali/api5)
 
 #### 5º Semestre do Curso | Parceiro Acadêmico: Pro4tech
 
