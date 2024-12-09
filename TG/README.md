@@ -1290,3 +1290,15 @@ Durante o projeto, aprendi muito com a exploração de novas tecnologias, como a
 
 ### Aprendizados Efetivos em Soft Skills
 Mais uma vez, aprendi muito sobre como apresentar o que desenvolvi e destacar o valor das minhas entregas. Nesse projeto, em especial, tive a oportunidade de realizar entregas mais complexas e individuais, como as pipelines de CI e a pipeline de ETL. Essa experiência reforçou a importância de saber comunicar a complexidade e o impacto do trabalho realizado, demonstrando que transmitir o valor das suas contribuições é tão essencial quanto a própria execução.
+
+---
+
+# Conclusão
+
+Levarei com eterna gratidão todos os aprendizados e experiências vividas na Fatec, que me proporcionaram a oportunidade de estar onde estou hoje profissionalmente. Muito obrigada a todos os professores e a quem mais tornou isso possível, o impacto desse ensino é gigantesco e transforma a vida de muitas pessoas (incluindo a minha).
+
+Abaixo está uma foto da última palestra que ministrei, no evento PGConf.Brasil 2024, que é a principal conferência de PostgreSQL do país, e isso só foi possível graças à toda bagagem positiva que levo da Fatec.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/519f1476-8bbd-44bd-842d-9c443c22c69d" alt="PGConf.BR2024-Ludmila-Chagas" width="300"></p>
+
+<p align="center">Obrigada!</p>
