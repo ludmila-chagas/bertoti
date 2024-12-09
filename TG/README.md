@@ -1105,8 +1105,8 @@ Esse projeto foi meu primeiro contato com a linguagem de programaçõa Go, e pud
 Dentre meu trabalho realizado, posso destacar:
 
 <details>
-<summary>ETL</summary>
-<p>Desenvolvi o ETL responsável por receber dados, tratá-los e carregá-los no banco de dados datawarehouse. O meu trabalho aqui foi desde criar os dados simulando o que receberíamos do cliente em uma planilha, até o código responsável por todas essas etapas, com destaque para a última, que é a maior e mais complexa, já que faz a conexão com a base e carrega os dados par as tabelas uma determinada ordem, respeitando as regras de restrição, a fim de evitar erros. </p>
+<summary>Pipeline ETL (Extract, Transform, Load)</summary>
+<p>Desenvolvi uma pipeline ETL completa, desde a criação de dados simulados, representando as informações que seriam recebidas do cliente em uma planilha, até a implementação do código responsável por cada etapa do processo. O destaque do projeto foi a fase de carregamento no data warehouse, a mais extensa e complexa, que inclui a conexão com a base de dados e a inserção dos dados em tabelas específicas. Este processo foi projetado para seguir uma ordem precisa, respeitando as regras de restrição do banco de dados, garantindo a integridade e evitando erros. </p>
 
 Trecho do código:
 
