@@ -72,12 +72,12 @@ Tive meu primeiro contato com programação em um curso de técnico, sendo minha
 <details>
 <summary>Projeto 6: 5º semestre - 2021</summary>
 
-- [Início Projeto 6](#projeto-6-1º-semestre-2024)
-- [Visão do Projeto](#visão-do-projeto-6)
-- [Principais tecnologias](#principais-tecnologias-6)
-- [Contribuições pessoais](#contribuições-pessoais-6)
-- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-6)
-- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-6)
+- [Início Projeto 6](#projeto-6-2º-semestre-2024)
+- [Visão do Projeto](#visão-do-projeto-5)
+- [Principais tecnologias](#principais-tecnologias-5)
+- [Contribuições pessoais](#contribuições-pessoais-5)
+- [Aprendizados Efetivos em Hard Skills](#aprendizados-efetivos-em-hard-skills-5)
+- [Aprendizados Efetivos em Soft Skills](#aprendizados-efetivos-em-soft-skills-5)
 </details>
 
 ---
