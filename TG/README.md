@@ -1191,8 +1191,9 @@ def main(self):
 
 
 <details>
-<summary>CI</summary>
-<p>Criei as pipelines de Integração Contínua do projeto, tendo como foco testar garantir qualidade e funcionamento antes do deploy. Foram feitas 4 pipelines para cada submódulo do projeto (back e front-end), a de build, as de testes (uma para testes de integração e outra para testes unitários) e a de deploy, cada uma com seus próprio gatilhos e regras de branches específicas.</p>
+<summary>Pipelines de CI (Integração Contínua)</summary>
+<p>Desenvolvi as pipelines de Integração Contínua (CI) do projeto com o objetivo de garantir a qualidade e o funcionamento adequado do código antes do deploy, bem como o momento adequado para o próprio deploy. Foram criadas quatro pipelines para cada submódulo do projeto (back-end e front-end): uma para build, uma para testes de integração, outra para testes unitários e, por fim, a de deploy.
+Cada pipeline foi configurada com gatilhos e regras específicas para branches, assegurando um fluxo de trabalho eficiente e alinhado às necessidades do projeto. Essa estrutura permitiu identificar e resolver problemas rapidamente, garantindo entregas consistentes e de alta qualidade.</p>
 
 Trecho do código:
 
