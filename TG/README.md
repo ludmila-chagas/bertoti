@@ -2,7 +2,7 @@
 
 ## Introdução
 
-<p align="center">Olá, seja bem-vindo (a)! </p>
+<p align="center">Olá, seja bem-vindo(a)! </p>
 
 Meu nome é Ludmila, sou DBA e estudante do tecnólogo de Banco de Dados na Fatec Profº Jessen Vidal, em São José dos Campos.
 
